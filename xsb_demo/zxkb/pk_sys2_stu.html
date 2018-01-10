@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>排课系统H5</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="author" content="f2e_ai">
+    <link rel="stylesheet" href="dist/lib/weui.min.css">
+    <link rel="stylesheet" href="dist/css/jquery-weui.css">
+    <link rel="stylesheet" href="dist/css/pk_sys.css">
+</head>
+<body ontouchstart>
+<div class="pkSys">
+<div class="weui-tab">
+    <div class="weui-flex">
+        <div class="changRole">
+            <div class="itemN itemN-first">
+                <a href="pk_sys1_role.html">
+                    <p><i class="qky-icon">&#xe630;</i></p>
+                    <p>切换身份</p>
+                </a>
+            </div>
+        </div>
+        <div class="weui-flex__item">
+           <div class="itemN ">
+               <span>
+                  <input class="weui-input" value="周课表" id="sheet" type="text"/><i class="qky-icon">&#xe621;</i>
+               </span>
+           </div>
+        </div>
+        <div class="weui-flex__item">
+            <div class="itemN">
+                <span>
+                  <input class="weui-input" value="第2周(本周)" id="week" type="text"/><i class="qky-icon">&#xe621;</i>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="weui-tab__bd">
+        <div class="weui-tab__bd-item weui-tab__bd-item--active">
+            <div class="dataTable">
+                <div class="textTips">
+                    <p><span class="gre"></span><span> 必修课</span></p>
+                    <p><span class="pin"></span><span>走班课</span> </p>
+                </div>
+                <table cellspacing="0">
+                    <tr>
+                        <th width="9%">日期</th><th width="13%">11/20</th><th width="13%">11/21</th><th width="13%">11/22</th><th width="13%">11/23</th><th width="13%">11/24</th><th width="13%">11/25</th><th width="13%">11/26</th>
+                    </tr>
+                    <tr>
+                        <td class="wt"><img src="dist/images/weektime.png"/> </td> <td class="wt">星期一</td><td>星期二</td><td>星期三</td><td>星期四</td><td>星期五</td><td>星期六</td><td>星期日</td>
+                    </tr>
+                    <tr>
+                        <td>1</td><td class="pink">语文@张三</td><td></td><td class="pink">数学@李四</td><td></td><td class="pink">英语@王五</td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td>2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td>3</td><td></td><td class="green" rowspan="2">走班制课程1@1号教学楼305室</td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td>4</td><td></td><td></td><td class="green"  rowspan="2">走班制课程2@1号教学楼305室</td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td>5</td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td>6</td><td></td><td class="pink">语文@张三</td><td></td><td></td><td></td><td class="pink" rowspan="3">体育@赵六</td><td></td>
+                    </tr>
+                    <tr>
+                        <td>7</td><td></td><td></td><td></td><td class="pink">数学@李四</td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td>8</td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                </table>
+                <p class="botTips">本周课时：<span>12</span>节</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="dist/lib/jquery-2.1.4.js"></script>
+<script src="dist/lib/fastclick.js"></script>
+<script src="dist/js/jquery-weui.js"></script>
+<script src="dist/js/demoJs.js"></script>
+<script>
+    /*$(function() {
+        FastClick.attach(document.body);
+    });
+    */
+</script>
+</body>
+</html>

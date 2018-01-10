@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+
+.cg_li{ width:100%; background:#fff; border-bottom:1px solid #ddd; box-sizing:border-box;}
+.cg_lis{-webkit-transition: all 0.25s ease-out 0s;-moz-transition: all 0.25s ease-out 0s;transition: all 0.25s ease-out 0s;}
+.cgli_infobox{padding:12px 4%;}
+.cgli_img{ width:30%;}
+.cgli_img img{ width:100%;}
+.cgli_cont{color:#939393;}
+.cgli_icon{ width:20px; height:20px; text-align:center; line-height:20px; color:#939393;}
+.cgli_butbox{ width:100%; border-top:1px solid #ddd;}
+.cgli_butbox a{ display:block; height:50px; line-height:50px; font-size:20px; text-align:center;}
+.cgli_butbox a.one{ border-right:1px solid #ddd;}
+
+.isok{ background:#04be02; color:#fff; padding:6px 10px; position:absolute; border-radius:4px; right:16px; bottom:16px;}
+.isok:hover{ background:#08b322}
+.isok.cur{ background:#F0A942;}
+
+.timesel{ display:block; background:#f1f1f1;  border-radius:4px; padding:4px 12px; margin:0 4px 10px 0; color:#a2a2a2;  font-size:14pz; text-align:center;}
+.timesel.cur{ background:#04be02; color:#fff;}
+
+.huli{ padding:10px 16px; box-sizing:border-box; background:#fff; width:100%; border-bottom:1px  solid #eee;line-height:24px; font-size:16px;}
+.huli i{ color:#08b322!important}
+.huInput{ border:none; width:100%; box-sizing:border-box; color:#737373; font-size:16px; border-radius:6px; font-family: Arial,Microsoft YaHei;}
+.hutable{ border-spacing: 0;border-collapse: collapse; width:100%;}
+.hutable tr th{ border:1px solid #ddd; padding:5px; background:#f5f5f5;}
+.hutable tr td{ border:1px solid #ddd; padding:5px;}
+
+.hu_nodata{ padding:6% 0;}
+.hu_nodata i{ display:block; margin:auto; text-align:center;}
+.hu_nodata span{display:block; text-align:center; font-size:16px; color:#737373; padding:16px;}
+
+.huTitle{ color:#232323;}
+.huTitle i{ color:#08b322;}
+
+.isend{ background:#f9f9f9;}
+.isend *,.isend i{ color:#999 !important;}
+
+.page{  width:100%; opacity:0; position: absolute;padding:48px 0 60px; z-index:22;}
+.page.open{ opacity:1; z-index:33}
+
+.qkyli{ padding:15px; border-bottom:1px solid #ddd; width:100%; box-sizing:border-box;}
+.qkyli.unb{ border:0; padding:5px 15px;}
+.qkyli.guodu{ text-align:center; background:#fff; border-top:1px solid #ddd; margin-top:10px;}
+.qkyli_tit{ font-size:16px; color:#111;}
+.qkyli_cont{ font-size:14px; color: #737373; text-align:right;}
+.qkyli_img{ width:35%; max-height:189px; overflow:hidden;}
+.qkyli_img img{ width:100%;}
+.qkyli_tx{ height:80px; width:80px; border-radius:50%; background:#f1f1f1; line-height:80px; text-align:center;}
+.qkyli_tx img{ height:100%; width:100%;border-radius:50%;}
+
+.qkyli .qky-select{ background:none; height:auto; border:0;}
+.qkyli .qky-select-value{ text-align:right;line-height: inherit;}
+.qkyli .qsv-label{ font-size:14px; color:#737373;}
+.qkyli .qsv-i{ font-size:20px !important; color:#737373; margin-left:0;}
+.qkyli .qsv-label span{ padding:0;}
+.qkyli_input{ width:100%; box-sizing:border-box;border-radius:6px; background:#fff; border:1px solid #ddd; padding:8px 16px; color:#666; margin-top:5px;}
+
+.qkyli_but{ padding:8px 10px; border-radius:6px; background:#fff; border:1px solid #dfdfdf; color:#737373; display:inline-block;}
+.qkyli_but.active{ background:#04be02; color:#fff; border-color:#04be02;}
+
+.qkyli_page{ display:none;}
+.qkyli_page.open{ display:block;}
+
+.qky_swich{ width:40px; height:20px;  border-radius:20px; background:#eee; display:inline-block}
+.qky_swich span{ display:block; width:50%; height:100%; border-radius:50%; background:#ccc;}
+.qky_swich.on{ background: #BEF1C1;}
+.qky_swich.on span{ margin-left:50%; background:#04be02;}
+
+.qkyh5_popup{  background:#fff; border-radius:6px; color:#04be02; text-align:center; line-height:24px; border:1px  solid #ddd; font-size:16px; }
+.qkyh5_popup{position:fixed; width:50%; top:50%; left:25%;padding:20px 0; z-index:99999999; margin-top:-20%; }
+
+.xl-table-info{ width: 100%; background: #f9f9f9; margin:60px 0 0; box-sizing: border-box; padding: 0 15px 10px; border-bottom: 1px solid #e1e1e1;border-top: 1px solid #e1e1e1;}
+.xl-table-info .ub{ margin-top: 10px;}
+.xlt-ti{ width: 26%; text-align: right; margin-right: 10px;}
+.xl-table{ width: 100%; margin: 10px auto; background: #f9f9f9; padding: 10px 10px 10px 0; box-sizing: border-box;border-bottom: 1px solid #e1e1e1;border-top: 1px solid #e1e1e1;}
+.xltable{border: 0;background-color: transparent;border-spacing: 0;border-collapse: collapse; width: 100%; margin: 0 auto;}
+
+.xltable th{ background: #f1f1f1; color: #535353; padding: 2px 0;border: 1px solid #f1f1f1; font-size: 10px;}
+.xltable td{ border: 1px solid #e9e9e9; border-top:none;}
+.xltable td a{ display: block; min-height: 50px; height: 100%; color: #535353;}
+.xltable td a span{ font-size: 12px; width: 14px; height: 14px; line-height: 14px; display: block; }
+.xltable td a b{ display: block; height: 4px; width: 60%; margin: 4px auto; background: #04be02; border-radius: 4px;}
+.xltable td a.oldday{ background: #ddd;color: #aaa;}
+.xltable td a.kong{ background: #eee;}
+.xltable tr td:nth-child(2) a.newday,
+.xltable tr td:nth-child(8) a.newday{ color:#d6c20f}
+.xltable td a.hasevent{background: #04be02;  color: #fff;}
+.xltable .show-moon{ background: #72d180; text-align: center; padding: 1px 0; color: #fff; border-color:#72d180; font-size: 12px; }
+.xltable .show-week{ width:14%; background:none; border: none;text-align: center; font-size: 12px; color: #aaa;}
+
+
+.xl-cont-box{ width: 96%; margin: 10px auto; background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: 0 10px; box-sizing: border-box;}
+.xl-cont-title{ background: #04be02; color: #fff; text-align: center; padding: 15px 0; box-sizing:border-box; margin: 0 -10px; border-radius: 4px 4px 0 0;}
+.xl-cont-title label{ display: block; width: 100%; text-align: center; font-size: 20px; line-height: 36px;}
+.xl-cont-title span{font-size: 15px;}
+.xl-cont-list { padding: 10px; border-bottom: 1px dashed #eee;}
+.xl-cont-list:nth-last-child(1){ border-bottom: none;}
+.xl-cont-list-tit{ width: 28%; text-align: right; margin-right: 5px; color: #111;}
+.xl-cont-null{ font-size: 16px; color: #999; text-align: center; padding: 20px 0; background: #e1e0e6; 
+    width: 96%; margin: 10px auto; border-radius: 4px; border: 1px solid #ddd; box-sizing: border-box}

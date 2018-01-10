@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="../image/qky2.ico">
+<title>作业评价</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+<link rel="stylesheet" href="../css/weui.min.css">
+<link rel="stylesheet" href="../css/jquery-weui.css">
+<!--基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/common/iconfont.css">
+<link rel="stylesheet" href="../css/circle-h5.css">
+</head>
+<body ontouchstart>
+
+<div class="weui-panel weui-panel_access mt0">
+  <div class="weui-panel__bd pl15 pr15" id="accor">
+    <div class="interact-box po_r pt10 pb10">
+      <div class=" po_ab_l radius-cirle mt12">
+        <img class="weui-media-box__thumb radius-cirle" src="../image/partent.jpg" alt="">
+      </div>
+      <div class="weui-media-box__bd">
+        <h4 class="weui-media-box__title weui-flex fz_14">
+            <div class="weui-flex__item">
+              <div class="placeholder co_66 mt5 mb5">梁小冰家长</div>
+              
+            </div>
+        </h4>
+        <div class="block Bubble01 mt5">
+            <p class="fz_14">最近小孩很认真完成作业，感谢老师的教导</p>
+        </div>
+        <div class="mt5 iblock">
+           <a href="javascript:;" onclick="$('.weui-gallery')" class="interact-thumb thumb01 Bubble02 iblock mr5 mb5" style="background-image:url(../image/u109.jpg)"></a>
+           <a href="javascript:;" onclick="$('.weui-gallery')" class="interact-thumb thumb01 Bubble02 iblock mr5 mb5" style="background-image:url(../image/The-course.jpg)"></a>
+           <a href="javascript:;" onclick="$('.weui-gallery')" class="interact-thumb thumb01 Bubble02 iblock mr5 mb5" style="background-image:url(../image/s3.jpg)"></a>
+        </div>
+        <div class="weui-flex mt5 fz_14">
+          <div class="weui-flex__item fz_12"><span class="placeholder pr5 iblock co_99 mt5">35分钟前</span></div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="weui-panel weui-panel_access mt12">
+
+  <div class="t-center pt10 clear">
+   <div class="weui-rater">
+    <a data-num = "0" class="weui-rater-box checked"> <span class="iconfont icon-shoucangxiao iblock fz_30 col-15"></span> </a>
+    <a data-num = "1" class="weui-rater-box checked"> <span class="iconfont icon-shoucangxiao iblock fz_30 col-15"></span> </a>
+    <a data-num = "2" class="weui-rater-box checked"> <span class="iconfont icon-shoucangxiao iblock fz_30 col-15"></span> </a>
+    <a data-num = "3" class="weui-rater-box checked"> <span class="iconfont icon-shoucangxiao iblock fz_30 col-15"></span> </a>
+    <a data-num = "4" class="weui-rater-box checked"> <span class="iconfont icon-shoucangxiao iblock fz_30 col-15"></span> </a>
+   </div>
+  </div>
+  <div class="ma20">
+    <p>非常棒，平时学习也是非常的努力，作业完成的也非常好，希望继续努力，祝下次考试能拿到最好成绩。非常棒，平时学习也是非常的努力，作业完成的也非常好，希望继续努力，祝下次考试能拿到最好成绩。</p>
+  </div>
+  
+</div>
+  
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/jquery-weui.js"></script>
+<script src="../js/swiper.js"></script>
+<script src="../js/zepto.min.js"></script>
+<script>
+ $(function(){
+ //评分js
+ var arr = ["1分","2分","3分","4分","5分"];
+	var num = -1;
+	$(".weui-rater a").mouseover(function(){
+		var thisL = $(this).index();
+		for(var i = 0;i < thisL;i++){
+			$(".weui-rater a").eq(i).addClass('checked');
+		}
+		for(var i = thisL; i < 5;i++){
+			$(".weui-rater a").eq(i).removeClass('checked');
+		}
+		$(this).addClass('checked');
+	})
+	$(".weui-rater a").mouseout(function(){
+		var thisL = $(this).index();
+		for(var i = thisL; i < 5;i++){
+			$(".weui-rater a").eq(i).removeClass('checked');
+		}
+	})
+	$(".weui-rater").mouseout(function(){
+		
+		for(var i = 0; i < num;i++){
+			$(".weui-rater a").eq(i).addClass('checked');
+		}
+	})
+  $(".weui-rater a").click(function(){
+	})
+ });      
+
+
+  var pb1 = $.photoBrowser({
+	items: [
+	  "../image/u109.jpg",
+	  "../image/The-course.jpg",
+	  "../image/s3.jpg",
+	],
+
+	onSlideChange: function(index) {
+	  console.log(this, index);
+	},
+
+	onOpen: function() {
+	  console.log("onOpen", this);
+	},
+	onClose: function() {
+	  console.log("onClose", this);
+	}
+  });
+  $(".thumb01").click(function() {
+	pb1.open();
+  });
+$('.send-txtare').keyup(function () {
+    $(this).height(this.scrollHeight);
+});
+
+
+</script>
+  
+</body>
+</html>

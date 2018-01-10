@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="../image/qky2.ico">
+<title>我的课程列表</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+<link rel="stylesheet" href="../css/weui.min.css">
+<link rel="stylesheet" href="../css/jquery-weui.css">
+<!--基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/common/iconfont.css">
+<link rel="stylesheet" href="../css/circle-h5.css">
+</head>
+<body ontouchstart>
+<div class="weui-cells bg_shade mt0">
+  <div class="weui-panel__bd">
+    <div class="weui-media-box weui-media-box_appmsg">
+      <div class="weui-media-box__hd">
+        <img class="weui-media-box__thumb radius-cirle bor-ddd" src="../image/teacher_tx.jpg" alt="">
+      </div>
+      <div class="weui-media-box__bd">
+        <h4 class="weui-media-box__title fz_14 co_ff"><span>张玉峰</span>老师<a href="../course-role.html"  class="weui-badge bg_white co_green fz_14 ml10"><i class="iconfont icon-shenfenqiehuan mr5"></i>切换身份</a></h4>
+        <p class="weui-media-box__desc co_ff t-right">本学期您共开<span class="fz_24 ml5 mr5">0</span>门课</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="weui-cells mt0 pa5">
+  <div class="t-center tit-list po_r pb5 mt10 mb5 fz_16">我的 · 课程</div>
+  <div class="clear">
+    <div class="t-center pt10 pb10 ma10 co_99">
+      <p><svg class="iconcolor fz_120" aria-hidden="true"><use xlink:href="#iconcolor-zanwushuju"></use></svg></p>
+      <p class="fz_12 mb10">您暂无开设选课，可查看学校全部课程的课程圈</p>
+    </div>
+
+  </div>
+</div>
+  
+<div class="weui-cells mt12 pa5">
+  <div class="t-center tit-list po_r pb5 mt10 mb5 fz_16">全部 · 课程</div>
+  <div class="clear">
+    <div class="t-center pt10 pb10 ma10 co_99">
+      <p><svg class="iconcolor fz_120" aria-hidden="true"><use xlink:href="#iconcolor-zanwushuju"></use></svg></p>
+      <p class="fz_12 mb10">您暂无开设选课，可查看学校全部课程的课程圈</p>
+    </div>
+
+  </div>
+</div>
+  
+<script src="../js/jquery-weui.js"></script>
+<script src="../iconfont/color/iconfont.js"></script>
+<script>
+scaleW=window.innerWidth/320;
+scaleH=window.innerHeight/480;
+var resizes = document.querySelectorAll('.resize');
+          for (var j=0; j<resizes.length; j++) {
+           resizes[j].style.width=parseInt(resizes[j].style.width)*scaleW+'px';
+		   resizes[j].style.height=parseInt(resizes[j].style.height)*scaleH+'px';
+		   resizes[j].style.top=parseInt(resizes[j].style.top)*scaleH+'px';
+		   resizes[j].style.left=parseInt(resizes[j].style.left)*scaleW+'px'; 
+          }
+</script>
+  
+</body>
+</html>

@@ -1,0 +1,96 @@
+@charset "utf-8";
+/*created by hhf_ai 备注:仅应用到页面的局部结构  修改版次:1106/1109/1113/1124/1206/1219/1225/1227/0105 */
+body{font-size: 14px; height: 100%;}
+h1,h2,h3,h4{font-weight: 400;}
+table, tbody, tfoot, thead, tr, th, td{margin:0;  padding:0;  border:0;  outline:0; vertical-align:baseline;  background:transparent;}
+.content .br-4{border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px}
+.project_content  .project_num span{font-size: 1.2em;}
+.project_content .toppart h3{padding-left: 25%;}
+.project_content .toppart h3,.project_content .toppart .mark{ line-height: 2em;left: 0;}
+.project_content .toppart .mark{ background:#fff; background-size:1em 2em;padding-right: 0.5em; height: 2em; min-width: 20%; position: absolute;}
+.project_content .toppart .labelGre,.project_content .toppart .labelGra,.project_content .toppart .labelOrg,.project_content .toppart .labelPin,.project_content .toppart .labelBlu{background-repeat: no-repeat; background-position:  right 0;}
+.project_content .toppart .mark span{width: 90%; color: #fff; padding:0 10% 0; font-size: 14px; text-align: center; }
+.project_content .toppart p,.project_num .ub-f1 p,.project_content .btn-view span.fr{font-size: 0.75em;}
+.project_content .midpart .date{ color: #333;position: relative; padding-left: 6%; margin-bottom: 10px;}
+.project_content .midpart  .date span{ margin: 0 3px;}
+.project_content .midpart .time{ position: absolute; left: 0; top: 2px; width: 6%; max-width:30px;height: auto;}
+.project_content .midpart p,.project_content .toppart .date,.top-banner .text p{ line-height: 2em;}
+.project_content .midpart{border-top: 1px solid #ddd; padding:10px; margin-top: 5px;}
+.project_content .midpart .value{max-width: 77%; padding-left: 2%;}
+.project_content .midpart .value > em{float: left;}
+.project_num{ padding-bottom:5px;}
+.project_num .ub-f1{ margin: 5px 2%; padding:2% 0;border:dashed 1px #93d8bd;background: #e9fff6;}
+.project_num .ub-f1 p{color:#666}
+.project_num span{color: #666;}
+.project_num span.choiced{color:#e44a21;}
+.project_content .btn-view{display: block;padding: 10px 10px 5px; border-top:solid 1px #ddd;}
+.project_content .btn-view span{color:#888;padding: 2px 5px; font-size: 0.85em;}
+.project_content .btn-view span.fl{color: #888;}
+.project_list li:last-child{margin-bottom: 60px; }
+.top-banner{position: relative; width: 100%;height: 150px; overflow: hidden;  background:#80C451 url("../images/top_banner.jpg") no-repeat scroll 0 0/100% 100% border-box border-box;}
+.top-banner .text .info{ width: 90%; margin: 20px 5% 0; padding: 0; }
+.top-banner .text  .titWrap{ width: 80%; margin: 0 auto; margin-bottom: 10px; height: auto; overflow: hidden;}
+.top-banner .text  .titWrap > input,.top-banner .text  .titWrap > i{ float: left;}
+.top-banner .text  .titWrap > input{ width: 90%;}
+.top-banner .text  .titWrap > i{ margin: 5px 0 0 10px;}
+.top-banner .text  .tit{ font-size: 1.3em; color: #fff; text-align: center;}
+/*.top-banner .text  .tit{ font-size: 1.3em; color: #fff; text-align: center; width: 100%;}*/
+.top-banner .text .intr{ color: #fff; position: absolute; right: 3%; bottom: 10px; font-size: 14px;}
+.top-banner .text .intr strong{font-size:1.5em;margin: 0 2px; font-weight: 400;}
+.top-banner .text .intr span{ margin: 0 5px;}
+.top-banner .text  .remark{padding:5px 0; width: 20%;background: url("../images/state_bg.png") no-repeat  scroll 0 0/100% 100% border-box border-box; color: #fff; margin: 5px auto 0; text-align: center;}
+.bottom_btn .ub-f1{font-size: 12px;}
+.project_content .toppart h3,.top-banner .text .info,.top-banner .text .tit,.classMark,.topbg > div{white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+.top .ub-f1{ width: 10%;}
+.topic_lei{border-left: 2px solid #80C451;}
+.top .home{ margin-left: 3%; text-align: left;}
+.top .c-user{ margin-right: 3%; text-align: right; }
+.top .ub-f4{ border-bottom: 4px solid  #fff;}
+.top .choosed{ border-color: #04be02; line-height: inherit;}
+.topS2{ line-height: 40px;}
+.topS2 .art_topic span{ line-height: inherit;}
+.topS2 + .zhanwei{height:40px;}
+.topbg{background: url("../images/top_banner.jpg") no-repeat bottom left; background-size: 100% auto; height: auto; position:relative;}
+.topbg > div{ color:  #fff; width: 80%; padding: 0 10%;}
+.dataTablebg{ position:absolute; top:0; left:0; height:100%; width:100%;background:#bae5dc url("../images/dataTable_b.png") no-repeat bottom left; background-size:100% auto; z-index: -1; opacity: .2;}
+.class_info span em{color:#ff4545}
+.class_info span em,.project_content .midpart .value > em{font-style: normal; }
+.classMark,.classMarkbg{ position: absolute; bottom: 0; left: 0; line-height: 30px; text-align: left; color: #fff;width: 90%; padding: 0 5%; font-size: 10px; color: #ccc; }
+.classMarkbg{ height: 30px; background: black;  opacity: .5; -moz-opacity: .5;}
+.project_content .toppart h3 span, .xkplan-btn > div > a{display: block;}
+.project_content .toppart .labelGre{background-image:  url("../images/label_gre.png");  background-color: #6FC969;}
+.project_content .toppart .labelGra{background-image:  url("../images/label_gray.png");  background-color: #ccc;}
+.project_content .toppart .labelOrg{background-image:  url("../images/label_org.png");  background-color: #FD7801;}
+.project_content .toppart .labelPin{background-image:  url("../images/label_pink.png"); background-color: #FF7B83;}
+.project_content .toppart .labelBlu{background-image:  url("../images/label_blue.png");; background-color: #03A8F3;}
+.xkplan-btn > div > a{ text-align: center; line-height: 3em; color: #333; background: #fafafa; text-decoration: none!important;}
+.xkplan-btn .Lbtn{border:1px solid #ddd; border-bottom: none; border-left: none; border-bottom-left-radius: 8px; }
+.xkplan-btn .Rbtn{border-top-style: solid; border-top-width: 1px; border-top-color: #ddd; border-bottom-right-radius: 8px;}
+.xkplanItem{ padding:10px 0 0 0;}
+.a-ul,.dataTable > table td a,.tStyl2 > table td a{text-decoration: underline!important; }
+.bgWhite{background: #fff;}
+.fItem{ width: 100%; margin-left: 0; padding: 10px 0;}
+.tabNav .js_a,.tabNav .js_b{ font-size: 16px;}
+.dataTable{ margin: 0 2% 20px; padding: 15px 0;}
+.dataTable > table{overflow:hidden;border:1px solid #EAEAEA;  background:#fefefe; width: 100%; border-right: none;}
+.dataTable > table th, .dataTable > table  td { text-align:center; vertical-align: middle; padding: 10px 2px; font-size: 14px;}
+.dataTable > table th {border-right:1px solid #EAEAEA; color: #333; background: #fafafa; font-weight: 900;}
+.dataTable > table td {border-top:1px solid #e0e0e0; border-right:1px solid #EAEAEA;}
+.project_list .listClass{ border-top:1px solid #ddd; }
+.project_list .listClass .class_list li:last-child{margin-bottom: 0;}
+.project_list .listClass .topic_area{ margin: 0;}
+.tStyl2 > table,.tStyl2 > table th,.tStyl2 > table td{ border-color: #ddd; border-right: 1px solid #ddd;}
+.tStyl2 > table{border-right: none;}
+.roleBanner { height: 136px;}
+.roleBanner .text .info{ margin: 25px 5% 0;}
+.roleBanner .text .remark{margin: 0 auto 0;}
+.roleBanner a i{color: #fff; font-size: 1.6em;}
+.roleBanner .prev,.roleBanner .next,.roleBanner .backbtn,.topbg .backbtn{position: absolute; left: 3%; top: 40%;}
+.roleBanner .next{ left: auto; right: 3%;}
+.roleBanner .backbtn,.topbg .backbtn{ top:0%; padding:10px 0 ;color: #fff;}
+.roleBanner .backbtn i,.topbg .backbtn i{font-size: 14px; color: #fff;}
+.topbg .backbtn{ padding: 0;}
+.botBtn{ text-align: center; line-height: 35px; color: #333; margin: 0 auto 0;}
+
+
+

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport">
+<link href="css/box.css" rel="stylesheet">
+<link href="css/iconfont.css" rel="stylesheet">
+<link href="css/quickcss.css" rel="stylesheet">
+<link href="css/qkybase1.4.css" rel="stylesheet">
+<link href="css/weui.min.css" rel="stylesheet">
+<link href="css/jquery-weui.css" rel="stylesheet">
+<link href="css/xkjh.css" rel="stylesheet">
+<link href="css/xk-sys-ex.css" rel="stylesheet"/>
+<title>选课统计</title>
+</head>
+<body>
+<div class="content">
+
+<!--
+<div class="ub top">
+<div class="ub-f3 "><i class="qkyicon_xk">&#xe632;</i></div>
+<div class="ub-f3  choosed ch_a">课程列表</div>
+<div class="ub-f3  ch_b ">我已选课</div><div class="ub-f2 "></div>
+</div>
+<div class="zhanwei"></div>
+	-->
+ <div class="page_a ">
+ <!--banner-->
+	 <!--banner结构改变  11-7 -->
+   <div class="top-banner roleBanner">
+	   <!--
+	   <a class="backbtn"><i class="qkyicon_xk">&#xe632;</i> 返回</a>
+	   <a  class="prev"><i class="qkyicon_xk">&#xe66d;</i> </a> <a  class="next"><i class="qkyicon_xk">&#xe604;</i> </a>
+	   -->
+	 <div class="text">
+			 <div class="info">
+				 <!--<p class="tit">2017-2018学年小学选课计划</p>  -->
+				 <div class="titWrap">
+                     <input class="weui-input  tit" value="选课计划选课计划选课计划选课计划" id="plane" type="text" /><i class="qkyicon_xk">&#xe621;</i>
+				 </div>
+				 <p class="intr"><span>优先入选</span> |<span>共有课程<strong>8</strong>门</span></p>
+			   <div class="remark">选课中</div>
+		 </div>
+	 </div>
+ </div>
+<!--fourt data -->
+	 <div class="ub class_info_num_box class_info_num fItem">
+		 <div class="ub-f1">
+			 <span class="stu_num">200</span>
+			 <span class="stu_txt">选课学生总数</span>
+		 </div>
+		 <div class="ub-f1">
+			 <span class="stu_num">200</span>
+			 <span class="stu_txt">限选名额数</span>
+		 </div>
+		 <div class="ub-f1">
+			 <span class="stu_num red">30</span>
+			 <span class="stu_txt">未选学生数</span>
+		 </div>
+		 <div class="ub-f1">
+			 <span class="stu_num red">10</span>
+			 <span class="stu_txt">落选学生数</span>
+		 </div>
+	 </div>
+	 <!--tab nav -->
+	 <!--
+	 <div class="ub top tabNav">
+		 <div class="ub-f5  choosed ch_a">班级统计</div>
+		 <div class="ub-f5  ch_b ">课程统计</div>
+	 </div>
+	 -->
+	 <div class="ub mt10 tabNav">
+		 <div class="ub-f1 js_a act">班级统计</div>
+		 <div class="ub-f1 js_b">课程统计</div>
+	 </div>
+	 <div class="page_c  show">
+		 <div class="dataTable">
+		 <table cellpadding="0" cellspacing="0">
+			 <tr><th>班级名称</th><th>总人数</th><th>已选</th><th>未选</th></tr>
+			 <tr onclick="link_1();"><td><a >高一（1）班</a></td><td>50</td><td>45</td><td>5</td></tr>
+			 <tr onclick="link_1();"><td><a>高一（2）班</a></td><td>50</td><td>42</td><td>8</td></tr>
+			 <tr onclick="link_1();"><td><a>高一（3）班</a></td><td>50</td><td>41</td><td>9</td></tr>
+			 <tr onclick="link_1();"><td><a>高一（4）班</a></td><td>50</td><td>41</td><td>9</td></tr>
+		 </table>
+		 </div>
+	 </div>
+	 <div class="page_d yc">
+		 <div class="dataTable">
+		 <table cellpadding="0" cellspacing="0">
+			 <tr><th>分组名称</th><th>课程名称</th><th>限选</th><th>已选</th></tr>
+			 <tr onclick="link_2()"><td>00010001</td><td><a>课程001001</a></td><td>50</td><td>45</td></tr>
+			 <tr onclick="link_2()"><td>00020002</a></td><td><a>课程002002</a></td><td>50</td><td>42</td></tr>
+		 </table>
+		 </div>
+	 </div>
+ </div>
+</div>
+</body>
+<script src="dist/jq/1.11.1/jquery.min.js"></script>
+<script src="dist/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="dist/jq/1.11.1/jquery-weui.js"></script>
+<script type="text/javascript">
+
+	$(".js_a").click(function(){
+		$(this).addClass("act").siblings().removeClass("act");
+		$(".page_c").removeClass("yc");
+		$(".page_d").removeClass("show");
+
+	});
+	$(".js_b").click(function(){
+		$(this).addClass("act").siblings().removeClass("act");
+		$(".page_c").addClass("yc");
+		$(".page_d").addClass("show");
+
+	});
+
+	function  link_1(){
+		window.location.href='bjtj_Admin.html';
+	}
+	function  link_2(){
+		window.location.href='kctj_Admin&Tea.html';
+	}
+</script>
+<script type="text/javascript">
+	$("#plane").picker({
+		title: "请选择选课计划",
+		cols: [
+			{
+				textAlign: 'center',
+				values: ['选课计划AAA', '选课计划名名名名名名名名名名名名','选课计划CCC','选课计划DDD']
+			}
+		],
+		onChange: function(p, v, dv) {
+			console.log(p, v, dv);
+		},
+		onClose: function(p, v, d) {
+			console.log("close");
+		}
+	});
+
+
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

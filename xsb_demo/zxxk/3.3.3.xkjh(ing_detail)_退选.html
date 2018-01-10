@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport">
+<link href="css/box.css" rel="stylesheet">
+<link href="css/iconfont.css" rel="stylesheet">
+<link href="css/quickcss.css" rel="stylesheet">
+<link href="css/qkybase1.4.css" rel="stylesheet">
+<link href="css/xkjh.css" rel="stylesheet">
+<link href="css/xk-sys-ex.css" rel="stylesheet"/>
+<title>选课计划</title>
+</head>
+<body>
+<div class="content">
+<!--分页-->
+<div class="ub top">
+<div class="ub-f1 home">
+	<i class="qkyicon_14">&#xe604;</i>
+</div>	
+<div class="ub-f8 art_topic"><span>红譯艺譚</span></div>
+	<div class="ub-f1 ">&nbsp;</div>
+
+</div>
+<div class="zhanwei"></div>
+ <!--页面1-->
+ <div class="page_a ">
+ <!--banner-->
+<div class="class_bg">
+  <div class="class_pic_box">
+  	<img src="images/hlm.jpg">
+  </div>
+  <div class="tea_name"><i class="qkyicon_xk">&#xea4b;</i><span>苏小小</span></div>
+  <div class="class_position"><span>每星期一 第2节课</span><i class="fg"> /</i> <span>一号楼 1203室</span></div>
+</div>
+<div class=" class_info_num">
+<div class="ub class_info_num_box">
+	<div class="ub-f1">
+		<span class="stu_num">80</span>
+		<span class="stu_txt">限制学生数</span>
+	</div>
+	<div class="btn_a"></div>
+	<div class="ub-f1">
+		<span class="stu_num">80</span>
+		<span class="stu_txt">每班可选学生数</span>
+	</div>
+	<div class="btn_a"></div>
+	<div class="ub-f1">
+		<span class="stu_num red">0</span>
+		<span class="stu_txt">本班已选</span>
+	</div>
+	</div>
+</div>
+ <!--分组内容-->
+ <div class="ub mt10">
+ 	<div class="ub-f1 js_a act">课程介绍</div>
+ 	<div class="ub-f1 js_b">教师介绍</div>
+ </div>
+ <!--分页1-->
+<div class="page_c show">
+<div class="artical">
+	<p>亲爱的同学们，你想了解英语世界《红楼梦》的血与泪吗？你想用心体会诗歌里不一样的爱与痛吗？你有志于学贯中外、传播中国文学、弘扬中华文化吗？你想……</p>
+	<p>  假如你是喜爱《红楼梦》者，或是爱好诗词曲赋和英文诗歌者，亦或是有志于学贯中外、传播中华文学者，那么，请加入《红譯艺譚——<红楼梦>诗词曲赋英译赏析》课程吧！在这里你可以感受别样的诗样年华，在赏析《红楼梦》诗词曲赋英译文本的同时提高英语诗歌鉴赏能力，在不知不觉当中提高自己的英语水平。</p>
+	<p>在本课程中，我们将一起用英语重温《红楼梦》诗词曲赋、再……</p>
+	</div>
+</div>
+<!--分页2-->
+ <div class="page_d yc">
+<ul class="tea_box ">
+	<li class="clear">
+		<div class="tea_pic fl"><img src="images/tea_pic.jpg"></div>
+		<div class="tea_info fl">
+		   <div>苏小小</div>
+		   <div class="tea_detail">
+		   	范海蓉，教育硕士，长期从事高三一线教学且成绩优异，希望跟热爱英语的孩子们一起进入英语的美妙世界！
+		   		
+		   			
+		   </div>
+		</div>
+	</li>
+	<li class="clear last">
+		<div class="tea_pic fl"><img src="images/tea_pic.jpg"></div>
+		<div class="tea_info fl">
+		   <div>苏小小</div>
+		   <div class="tea_detail">
+		   	范海蓉，教育硕士，长期从事高三一线教学且成绩优异，希望跟热爱英语的孩子们一起进入英语的美妙世界！
+		   	范海蓉，教育硕士，长期从事高三一线教学且成绩优异，希望跟热爱英语的孩子们一起进入英语的美妙世界！	
+		   	范海蓉，教育硕士，长期从事高三一线教学且成绩优异，希望跟热爱英语的孩子们一起进入英语的美妙世界！		
+		   </div>
+		</div>
+	</li>
+</ul>
+</div>
+ </div> 
+ <!--页面2-->
+ 
+ <!--底部按钮-->
+ <div class="bottom_set">
+ <div class="ub bottom_btn ">
+ 	<div class="btn_box">
+ 		<button type="button" class="btn btn-primary bottom_b_btn tui"><span>退选</span></button>
+ 	</div>
+ </div>
+
+ </div> 
+</div>
+</body>
+<script src="dist/jq/1.11.1/jquery.min.js"></script>
+<script src="dist/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+<script type="text/javascript"> 
+	
+$(".js_a").click(function(){
+	 $(this).addClass("act").siblings().removeClass("act");
+	 $(".page_c").removeClass("yc");
+	$(".page_d").removeClass("show");
+	
+});
+$(".js_b").click(function(){
+	 $(this).addClass("act").siblings().removeClass("act");
+	 $(".page_c").addClass("yc");
+	 $(".page_d").addClass("show");
+	
+});
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

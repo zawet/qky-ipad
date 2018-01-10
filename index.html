@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="icon" href="yd.ico">
+    <title>学生平板系统</title>
+    <link href="css/HFive.css" rel="stylesheet" type="text/css" />
+    <link href="js/swiper/3.4.1/css/swiper.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/ipad.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body class="qkybody">
+   <div class="loadprogress" id="loadprogress">
+        <div class="progress">
+            <div class="progressyuan">
+                <div class="proleft pro"><b id="lb"></b></div>
+                <div class="proright pro"><b id="rb"></b></div>
+                <div class="protxt"><span class="bf" id="bf">0%</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!--头部标准，一般固定-->
+    <div class="qkyh5_header noshadow ub ub-ac">
+        <div class="logo"></div>
+        <div class="title ub-f2" id="time">10:26</div>
+        <div class="txtother" id="date">星期二 2018-01-08</div> 
+    </div>
+
+    <!--中部标准，一般放列表-->
+    <div class="qkyh5_main pt50">
+        <div class="allbg"></div>
+        <div class="swiper-container ipad-des">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide ub one">
+                    <div class="stu-left">
+                        <div class="pad-box mb10 pa20">
+                            <div class="stu-tx"> <div class="tx"><img src="images/tx.png" alt=""></div><a>编辑</a></div>
+                            <div class="stu-info">
+                                <label>杨鹏</label>
+                                <span>三年级（1）班</span>
+                                <span>全课云中学</span>
+                            </div>
+                            <ul class="stu-kq">
+                                <li><b></b>正常：<label>51</label>次</li>
+                                <li><b></b>请假：<label>15</label>次</li>
+                                <li><b></b>迟到：<label>23</label>次</li>
+                                <li><b></b>早退：<label>5</label>次</li>
+                            </ul>
+                        </div>
+                        <a class="pad-box but ub ub-ac" id="toindex"><i class="qkyicon">&#xe655;</i><span>返回首页</span></a>
+                    </div>
+                    <div class="tab-but ub ub-ac"><a class="active">动态</a><a>课表</a></div>
+                    <div class="stu-right dtpage">
+                                <div class="pad-box mb10">
+                                    <div class="dt-title ub ub-ac"><div class="dticon1"><img src="images/dticon1.png" alt=""></div><span>综合素质</span></div>
+                                    <ul class="dt-info">
+                                        <li>1、2018年1月3日 石明伟老师发布一则实践活动</li>
+                                        <li>2、2018年1月1日 新学期期中考试成绩已上传</li>
+                                        <li>3、2017年12月21日 获得三好学生容易</li>
+                                        <li><a href="">查看更多</a></li>
+                                    </ul>
+                                </div>
+                                <div class="pad-box mb10">
+                                        <div class="dt-title ub ub-ac"><div class="dticon2"><img src="images/dticon2.png" alt=""></div><span>在线选课</span></div>
+                                        <ul class="dt-info">
+                                            <li>1、杨鹏学生有最新选课计划即将开始，时间：2018-1-8 8：00~2018-1-10 15：00</li>
+                                        </ul>
+                                </div>
+                                <div class="pad-box mb10">
+                                        <div class="dt-title ub ub-ac"><div class="dticon3"><img src="images/dticon3.png" alt=""></div><span>学生考勤</span></div>
+                                        <ul class="dt-info">
+                                            <li>1、2018年1月3日 上午第一课时有迟到情况</li>
+                                        </ul>
+                                </div>
+                                <div class="pad-box mb10">
+                                        <div class="dt-title ub ub-ac"><div class="dticon1"><img src="images/dticon1.png" alt=""></div><span>综合素质</span></div>
+                                        <ul class="dt-info">
+                                            <li>1、2018年1月3日 石明伟老师发布一则实践活动</li>
+                                            <li>2、2018年1月1日 新学期期中考试成绩已上传</li>
+                                            <li>3、2017年12月21日 获得三好学生容易</li>
+                                            <li><a href="">查看更多</a></li>
+                                        </ul>
+                                </div> 
+                    </div>
+                </div>
+                <div class="swiper-slide ub ub-ac  pbai5 box_b mtf">
+                    <div class="app-box clear3 index-left" id="indexLeft"></div>
+                    <div class="app-box clear3 ub-f1 index-right" id="indexRight"></div>
+                </div>
+                <div class="swiper-slide ub ub-ac mtf"><div class="app-box clear3 all" id="school"></div></div>
+                <div class="swiper-slide ub ub-ac mtf"><div class="app-box clear3 all" id="other"></div></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="qkyh5_footbg">
+        <div class="footbox ub ub-ac">
+            <a class="trn">
+                <div class="footicon">
+                <label class="myicon"></label><label class="myiconOn on"></label>
+                </div>
+                <span>我的</span>
+                <b></b>
+            </a>
+            <a class="cur trn">
+                <div class="footicon">
+                <label class="indexicon"></label><label class="indexiconOn on"></label>
+                </div>
+                <span>核心素养</span>
+                <b></b>
+            </a>
+            <a class="trn">
+                <div class="footicon">
+                <label class="schoolicon"></label><label class="schooliconOn on"></label>
+                </div>
+                <span>智慧校园</span>
+                <b></b>
+            </a>
+            <a class="trn">
+                <div class="footicon">
+                <label class="othericon"></label><label class="othericonOn on"></label>
+                </div>
+                <span>增值应用</span>
+                <b></b>
+            </a>
+        </div>
+    </div>
+    <script language="JavaScript" charset="utf-8" src="js/preloadjs-0.6.2.min.js"></script>
+    <script src="js/sea.js"></script>
+    <script src="js/seaconfig2.0.js"></script>
+    <script>
+        seajs.use(["jq","run","sw","mouldData","load"], function (j,r,sw,data,load) {
+            load.preload.on("complete",function(){
+                $(".loadprogress").fadeOut(200);
+                r.ipad(data); 
+                load.setImg(load.preload._loadItemsById); 
+            });
+        });
+    </script>
+</body>
+
+</html>

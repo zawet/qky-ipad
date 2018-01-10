@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="../image/qky2.ico">
+<title>第二课堂</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+<link rel="stylesheet" href="../css/weui.min.css">
+<link rel="stylesheet" href="../css/jquery-weui.css">
+<!--基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/common/iconfont.css">
+<link rel="stylesheet" href="../css/circle-h5.css">
+</head>
+<body ontouchstart>
+<div class="header-title weui-flex">
+  <div class="placeholder col-20"><a href="01course-list.html" class="pl10 fz_14"><i class="iconfont icon-zuo fz_20 middle mr-5"></i>切换课程</a></div>
+  <div class="t-center weui-flex__item tit-flex">
+    我的
+  </div>
+  <div class="placeholder col-20 t-right"><a href="03set.html" class="iconfont icon-set iblock fz_20 pl10 pr10"></a></div>
+</div>
+<div class="pt44 pb50 mb12">
+  <div class="bg_statis pt20 pr15 pb15 pl15 po_r">
+   <div class="po_ab_r pr15 pt5"><a href="02statistic-more.html" class="fz_13 pt5 pb5">全部排名<i class="iconfont icon-gengduo1 fz_13"></i></a></div>
+   <div class=" clear">
+    <div class="col-30 fl sta-top top-l bg_white pt15 pb15 mt20">
+      <div class="weui-media-box_appmsg">
+        <div class="weui-media-box__hd mauto po_r mt20">
+          <span class="po_ab_l"><svg class="iconcolor fz_50" aria-hidden="true"><use xlink:href="#iconcolor-yajun"></use></svg></span>
+          <img class="weui-media-box__thumb radius-cirle bor-ddd" src="../image/s3.jpg" alt="">
+        </div>
+      </div>
+      <div class="t-center mt10">
+        <p class="fz_14 weui-media-box__title mb5">孙倩怡家长</p>
+        <p class="fz_11 co_99">互动值</p>
+        <p class="fz_18 color-warning">98</p>
+      </div>
+    </div>
+    <div class="col-40 fl sta-top top-m bg_white pt15 pb15">
+      <div class="weui-media-box_appmsg">
+        <div class="weui-media-box__hd mauto po_r mt20">
+          <span class="po_ab_l"><svg class="iconcolor fz_60" aria-hidden="true"><use xlink:href="#iconcolor-guanjun"></use></svg></span>
+          <img class="weui-media-box__thumb radius-cirle bor-ddd" src="../image/teacher_tx.jpg" alt="">
+        </div>
+      </div>
+      <div class="t-center mt10">
+        <p class="fz_14 weui-media-box__title mb5">周常珊子家长</p>
+        <p class="fz_11 co_99">互动值</p>
+        <p class="fz_18 color-warning">198</p>
+      </div>
+    </div>
+    <div class="col-30 fl sta-top top-r bg_white pt15 pb15 mt20">
+      <div class="weui-media-box_appmsg">
+        <div class="weui-media-box__hd mauto po_r mt20">
+          <span class="po_ab_l"><svg class="iconcolor fz_50" aria-hidden="true"><use xlink:href="#iconcolor-jijun"></use></svg></span>
+          <img class="weui-media-box__thumb radius-cirle bor-ddd" src="../image/student1.png" alt="">
+        </div>
+      </div>
+      <div class="t-center mt10">
+        <p class="fz_14 weui-media-box__title mb5">欧阳娜娜家长</p>
+        <p class="fz_11 co_99">互动值</p>
+        <p class="fz_18 color-warning">85</p>
+      </div>
+    </div>
+   </div>
+   <div class="clear fz_12 co_99 mt15">家长评论、点好和作业上传产生互动值，互动统计每周更新一次</div> 
+  </div>
+  <div class="weui-cells mt0">
+     <div class="bg_white pa15 fz_14 co_66"><i class="iconfont icon-yijianfankui mr5"></i>发表了<span class="co_33 fz_15">120</span>条动态<span class="co_99 fz_12">（2017-12-11 开始发表）</span></div> 
+     <div class="weui-flex t-center mb20">
+       <div class="weui-flex__item">
+        <div class="placeholder">
+          <p class="fz_18 color-warning">85</p>
+          <p class="fz_12 co_33">互动</p>
+        </div>
+       </div>
+       <div class="weui-flex__item">
+        <div class="placeholder">
+          <p class="fz_18 color-warning">21</p>
+          <p class="fz_12 co_33">作业</p>
+        </div>
+       </div>
+       <div class="weui-flex__item">
+        <div class="placeholder">
+          <p class="fz_18 color-warning">17</p>
+          <p class="fz_12 co_33">通知</p>
+        </div>
+       </div>
+     </div>
+  </div>  
+  <div class="weui-cells__title mt12 pt10 pb10 fz_14 co_66"><i class="iconfont icon-friend_light mr5"></i>学生学习情况</div>
+  <div class="weui-cells mt0">
+     <div class="weui-panel__bd">
+        <div class="weui-media-box cour-one weui-media-box_appmsg pl5 pr5 ml10 mr10">
+          <div class="weui-media-box__hd sta-more">
+            <img class="weui-media-box__thumb radius-cirle" src="../image/student1.png" alt="">
+          </div>
+          <div class="weui-media-box__bd">
+            <div class="weui-flex">
+                <div class="weui-flex__item">
+                  <div class="weui-media-box__title fz_14 placeholder co_66">张子扬</div>
+                  <p class="weui-media-box__title fz_13 co_99">被表扬<span class="fz_14 color-warning ml5 mr5">2</span>次</p>
+                </div>
+                <div class="placeholder col-50 fz_12 co_99 t-right po_r">
+                  <div class="iblock">
+                    <div class="rater-star zindex1 po_r iblock middle mb5">
+                       <div class="rater-starc zindex2 po_ab_l" style="width:75%;">
+                       </div>
+                    </div>
+                    <span class="ml5 co_33 fz_14">3.75</span>
+                  </div>
+                  <p>作业综合评星</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="weui-media-box cour-one weui-media-box_appmsg pl5 pr5 ml10 mr10">
+          <div class="weui-media-box__hd sta-more">
+            <img class="weui-media-box__thumb radius-cirle" src="../image/s3.jpg" alt="">
+          </div>
+          <div class="weui-media-box__bd">
+            <div class="weui-flex">
+                <div class="weui-flex__item">
+                  <div class="weui-media-box__title fz_14 placeholder co_66">吴雨涵</div>
+                  <p class="weui-media-box__title fz_13 co_99">被表扬<span class="fz_14 color-warning ml5 mr5">0</span>次</p>
+                </div>
+                <div class="placeholder col-50 fz_12 co_99 t-right po_r">
+                  <div class="iblock">
+                    <div class="rater-star zindex1 po_r iblock middle mb5">
+                       <div class="rater-starc zindex2 po_ab_l" style="width:75%;">
+                       </div>
+                    </div>
+                    <span class="ml5 co_33 fz_14">3.75</span>
+                  </div>
+                  <p>作业综合评星</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="weui-media-box cour-one weui-media-box_appmsg pl5 pr5 ml10 mr10">
+          <div class="weui-media-box__hd sta-more">
+            <img class="weui-media-box__thumb radius-cirle" src="../image/u111.jpg" alt="">
+          </div>
+          <div class="weui-media-box__bd">
+            <div class="weui-flex">
+                <div class="weui-flex__item">
+                  <div class="weui-media-box__title fz_14 placeholder co_66">李垚星</div>
+                  <p class="weui-media-box__title fz_13 co_99">被表扬<span class="fz_14 color-warning ml5 mr5">5</span>次</p>
+                </div>
+                <div class="placeholder col-50 fz_12 co_99 t-right po_r">
+                  <div class="iblock">
+                    <div class="rater-star zindex1 po_r iblock middle mb5">
+                       <div class="rater-starc zindex2 po_ab_l" style="width:75%;">
+                       </div>
+                    </div>
+                    <span class="ml5 co_33 fz_14">3.75</span>
+                  </div>
+                  <p>作业综合评星</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="weui-media-box cour-one weui-media-box_appmsg pl5 pr5 ml10 mr10">
+          <div class="weui-media-box__hd sta-more">
+            <img class="weui-media-box__thumb radius-cirle" src="../image/u109.jpg" alt="">
+          </div>
+          <div class="weui-media-box__bd">
+            <div class="weui-flex">
+                <div class="weui-flex__item">
+                  <div class="weui-media-box__title fz_14 placeholder co_66">王梓桐</div>
+                  <p class="weui-media-box__title fz_13 co_99">被表扬<span class="fz_14 color-warning ml5 mr5">3</span>次</p>
+                </div>
+                <div class="placeholder col-50 fz_12 co_99 t-right po_r">
+                  <div class="iblock">
+                    <div class="rater-star zindex1 po_r iblock middle mb5">
+                       <div class="rater-starc zindex2 po_ab_l" style="width:75%;">
+                       </div>
+                    </div>
+                    <span class="ml5 co_33 fz_14">3.75</span>
+                  </div>
+                  <p>作业综合评星</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="weui-media-box cour-one weui-media-box_appmsg pl5 pr5 ml10 mr10">
+          <div class="weui-media-box__hd sta-more">
+            <img class="weui-media-box__thumb radius-cirle" src="../image/The-course.jpg" alt="">
+          </div>
+          <div class="weui-media-box__bd">
+            <div class="weui-flex">
+                <div class="weui-flex__item">
+                  <div class="weui-media-box__title fz_14 placeholder co_66">赵庆</div>
+                  <p class="weui-media-box__title fz_13 co_99">被表扬<span class="fz_14 color-warning ml5 mr5">0</span>次</p>
+                </div>
+                <div class="placeholder col-50 fz_12 co_99 t-right po_r">
+                  <div class="iblock">
+                    <div class="rater-star zindex1 po_r iblock middle mb5">
+                       <div class="rater-starc zindex2 po_ab_l" style="width:75%;">
+                       </div>
+                    </div>
+                    <span class="ml5 co_33 fz_14">3.75</span>
+                  </div>
+                  <p>作业综合评星</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="weui-media-box cour-one weui-media-box_appmsg  pt10 pb10 pl0 pr0 ml10 mr10">
+          <a href="#" class="t-center bg_gray radius-4 block col-100 pa5">查看更多<i class="iconfont icon-xia"></i></a>
+        </div>
+        
+     </div>
+  </div>  
+  <!--原统计数表
+  <div class="weui-cells mt0">
+     <div class="bg_white pa15 mb5 fz_14 co_66"><i class="iconfont icon-yijianfankui mr5"></i>作业反馈情况<span class="co_99 fz_12">（共71份作业，10份未评价作业）</span></div> 
+     <div class="data_view_limain pb15" id="ec-task"></div>
+  </div>  
+  -->  
+  <div class="weui-cells__title mt12 pt10 pb10 fz_14 co_66"><i class="iconfont icon-icon30 mr5"></i>学生综合报告</div>
+  <div class="weui-cells mt0">
+     <div class="weui-flex t-center pt15 pb15">
+        <div class="weui-flex__item">
+          <div class="placeholder">
+            <svg class="iconcolor fz_60" aria-hidden="true"><use xlink:href="#iconcolor-p-"></use></svg>
+            <p class="mt10">能力报告</p>
+          </div>
+        </div>
+        <div class="weui-flex__item">
+          <div class="placeholder">
+            <svg class="iconcolor fz_60" aria-hidden="true"><use xlink:href="#iconcolor-xueyeqianse"></use></svg>
+            <p class="mt10">学业报告</p>
+          </div>
+        </div>
+        <div class="weui-flex__item">
+          <div class="placeholder">
+            <svg class="iconcolor fz_60" aria-hidden="true"><use xlink:href="#iconcolor-jiankangbaogao"></use></svg>
+            <p class="mt10">体质报告</p>
+          </div>
+        </div>
+      </div>
+  </div>    
+  <div class="weui-loadmore weui-loadmore_line">
+    <span class="weui-loadmore__tips">已更新全部</span>
+  </div>
+</div> 
+
+<!--无数据冷启动页面-->
+<div class="pt44 pb50 mb12">
+  <div class="bg_statis pt20 pr15 pb15 pl15 po_r">
+   <div class="po_ab_r pr15 pt5"><a href="02statistic-more.html" class="fz_13 pt5 pb5">全部排名<i class="iconfont icon-gengduo1 fz_13"></i></a></div>
+   <div class=" clear">
+    <div class="col-30 fl sta-top top-l bg_white pt15 pb15 mt20">
+      <div class="weui-media-box_appmsg">
+        <div class="weui-media-box__hd mauto po_r mt20">
+          <span class="po_ab_l"><svg class="iconcolor fz_50" aria-hidden="true"><use xlink:href="#iconcolor-yajun"></use></svg></span>
+          <img class="weui-media-box__thumb radius-cirle bor-ddd" src="../image/student1.png" alt="">
+        </div>
+      </div>
+      <div class="t-center mt10">
+        <p class="fz_14 weui-media-box__title mb5">暂无</p>
+        <p class="fz_11 co_99">互动值</p>
+        <p class="fz_18 color-warning">0</p>
+      </div>
+    </div>
+    <div class="col-40 fl sta-top top-m bg_white pt15 pb15">
+      <div class="weui-media-box_appmsg">
+        <div class="weui-media-box__hd mauto po_r mt20">
+          <span class="po_ab_l"><svg class="iconcolor fz_60" aria-hidden="true"><use xlink:href="#iconcolor-guanjun"></use></svg></span>
+          <img class="weui-media-box__thumb radius-cirle bor-ddd" src="../image/student1.png" alt="">
+        </div>
+      </div>
+      <div class="t-center mt10">
+        <p class="fz_14 weui-media-box__title mb5">暂无</p>
+        <p class="fz_11 co_99">互动值</p>
+        <p class="fz_18 color-warning">0</p>
+      </div>
+    </div>
+    <div class="col-30 fl sta-top top-r bg_white pt15 pb15 mt20">
+      <div class="weui-media-box_appmsg">
+        <div class="weui-media-box__hd mauto po_r mt20">
+          <span class="po_ab_l"><svg class="iconcolor fz_50" aria-hidden="true"><use xlink:href="#iconcolor-jijun"></use></svg></span>
+          <img class="weui-media-box__thumb radius-cirle bor-ddd" src="../image/student1.png" alt="">
+        </div>
+      </div>
+      <div class="t-center mt10">
+        <p class="fz_14 weui-media-box__title mb5">暂无</p>
+        <p class="fz_11 co_99">互动值</p>
+        <p class="fz_18 color-warning">0</p>
+      </div>
+    </div>
+   </div>
+   <div class="clear fz_12 co_99 mt15">家长评论、点好和作业上传产生互动值，互动统计每周更新一次</div> 
+  </div>
+  <div class="weui-cells mt0">
+     <div class="bg_white pa15 fz_14 co_66"><i class="iconfont icon-yijianfankui mr5"></i>发表了<span class="co_33 fz_15">120</span>条动态<span class="co_99 fz_12">（2017-12-11 开始发表）</span></div> 
+     <div class="weui-flex t-center mb20">
+       <div class="weui-flex__item">
+        <div class="placeholder">
+          <p class="fz_18 color-warning">0</p>
+          <p class="fz_12 co_33">互动</p>
+        </div>
+       </div>
+       <div class="weui-flex__item">
+        <div class="placeholder">
+          <p class="fz_18 color-warning">0</p>
+          <p class="fz_12 co_33">作业</p>
+        </div>
+       </div>
+       <div class="weui-flex__item">
+        <div class="placeholder">
+          <p class="fz_18 color-warning">0</p>
+          <p class="fz_12 co_33">通知</p>
+        </div>
+       </div>
+     </div>
+  </div>  
+  <div class="weui-cells__title mt12 pt10 pb10 fz_14 co_66"><i class="iconfont icon-friend_light mr5"></i>学生学习情况</div>
+  <div class="weui-cells mt0">
+     <div class="weui-panel__bd">
+        <div class="weui-media-box cour-one weui-media-box_appmsg pl5 pr5 ml10 mr10">
+          <div class="weui-media-box__hd sta-more">
+            <img class="weui-media-box__thumb radius-cirle" src="../image/student1.png" alt="">
+          </div>
+          <div class="weui-media-box__bd">
+            <div class="weui-flex">
+                <div class="weui-flex__item">
+                  <div class="weui-media-box__title fz_14 placeholder co_66">张子扬</div>
+                  <p class="weui-media-box__title fz_13 co_99">被表扬<span class="fz_14 color-warning ml5 mr5">0</span>次</p>
+                </div>
+                <div class="placeholder col-50 fz_12 co_99 t-right po_r">
+                  <div class="iblock">
+                    <div class="rater-star zindex1 po_r iblock middle mb5">
+                       <div class="rater-starc zindex2 po_ab_l" style="width:0%;">
+                       </div>
+                    </div>
+                    <span class="ml5 co_33 fz_14">0</span>
+                  </div>
+                  <p>作业综合评星</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="weui-media-box cour-one weui-media-box_appmsg pl5 pr5 ml10 mr10">
+          <div class="weui-media-box__hd sta-more">
+            <img class="weui-media-box__thumb radius-cirle" src="../image/s3.jpg" alt="">
+          </div>
+          <div class="weui-media-box__bd">
+            <div class="weui-flex">
+                <div class="weui-flex__item">
+                  <div class="weui-media-box__title fz_14 placeholder co_66">吴雨涵</div>
+                  <p class="weui-media-box__title fz_13 co_99">被表扬<span class="fz_14 color-warning ml5 mr5">0</span>次</p>
+                </div>
+                <div class="placeholder col-50 fz_12 co_99 t-right po_r">
+                  <div class="iblock">
+                    <div class="rater-star zindex1 po_r iblock middle mb5">
+                       <div class="rater-starc zindex2 po_ab_l" style="width:0%;">
+                       </div>
+                    </div>
+                    <span class="ml5 co_33 fz_14">0</span>
+                  </div>
+                  <p>作业综合评星</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="weui-media-box cour-one weui-media-box_appmsg pl5 pr5 ml10 mr10">
+          <div class="weui-media-box__hd sta-more">
+            <img class="weui-media-box__thumb radius-cirle" src="../image/u111.jpg" alt="">
+          </div>
+          <div class="weui-media-box__bd">
+            <div class="weui-flex">
+                <div class="weui-flex__item">
+                  <div class="weui-media-box__title fz_14 placeholder co_66">李垚星</div>
+                  <p class="weui-media-box__title fz_13 co_99">被表扬<span class="fz_14 color-warning ml5 mr5">0</span>次</p>
+                </div>
+                <div class="placeholder col-50 fz_12 co_99 t-right po_r">
+                  <div class="iblock">
+                    <div class="rater-star zindex1 po_r iblock middle mb5">
+                       <div class="rater-starc zindex2 po_ab_l" style="width:0%;">
+                       </div>
+                    </div>
+                    <span class="ml5 co_33 fz_14">0</span>
+                  </div>
+                  <p>作业综合评星</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="weui-media-box cour-one weui-media-box_appmsg pl5 pr5 ml10 mr10">
+          <div class="weui-media-box__hd sta-more">
+            <img class="weui-media-box__thumb radius-cirle" src="../image/u109.jpg" alt="">
+          </div>
+          <div class="weui-media-box__bd">
+            <div class="weui-flex">
+                <div class="weui-flex__item">
+                  <div class="weui-media-box__title fz_14 placeholder co_66">王梓桐</div>
+                  <p class="weui-media-box__title fz_13 co_99">被表扬<span class="fz_14 color-warning ml5 mr5">0</span>次</p>
+                </div>
+                <div class="placeholder col-50 fz_12 co_99 t-right po_r">
+                  <div class="iblock">
+                    <div class="rater-star zindex1 po_r iblock middle mb5">
+                       <div class="rater-starc zindex2 po_ab_l" style="width:0%;">
+                       </div>
+                    </div>
+                    <span class="ml5 co_33 fz_14">0</span>
+                  </div>
+                  <p>作业综合评星</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="weui-media-box cour-one weui-media-box_appmsg pl5 pr5 ml10 mr10">
+          <div class="weui-media-box__hd sta-more">
+            <img class="weui-media-box__thumb radius-cirle" src="../image/The-course.jpg" alt="">
+          </div>
+          <div class="weui-media-box__bd">
+            <div class="weui-flex">
+                <div class="weui-flex__item">
+                  <div class="weui-media-box__title fz_14 placeholder co_66">赵庆</div>
+                  <p class="weui-media-box__title fz_13 co_99">被表扬<span class="fz_14 color-warning ml5 mr5">0</span>次</p>
+                </div>
+                <div class="placeholder col-50 fz_12 co_99 t-right po_r">
+                  <div class="iblock">
+                    <div class="rater-star zindex1 po_r iblock middle mb5">
+                       <div class="rater-starc zindex2 po_ab_l" style="width:0%;">
+                       </div>
+                    </div>
+                    <span class="ml5 co_33 fz_14">0</span>
+                  </div>
+                  <p>作业综合评星</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="weui-media-box cour-one weui-media-box_appmsg  pt10 pb10 pl0 pr0 ml10 mr10">
+          <a href="#" class="t-center bg_gray radius-4 block col-100 pa5">查看更多<i class="iconfont icon-xia"></i></a>
+        </div>
+        
+     </div>
+  </div>  
+  <div class="weui-loadmore weui-loadmore_line">
+    <span class="weui-loadmore__tips">已更新全部</span>
+  </div>
+</div> 
+<!--无数据冷启动页面over-->
+
+
+<div class="weui-tabbar">
+  <a href="01course-c.html" class="weui-tabbar__item">
+    <div class="weui-tabbar__icon po_r">
+      <i class="iconfont icon-kechengquan"></i>
+      <span class="weui-badge badge-new" style="position: absolute;top:-1px;right:-10px;">4</span>
+    </div>
+    <p class="weui-tabbar__label">课程圈</p>
+  </a>
+  <div class="weui-tabbar__item po_r">
+    <a href="01course-send.html" class="radius-cirle tab-edit po_ab_l">
+      <div class="weui-tabbar__icon mt5">
+        <i class="iconfont icon-tianjia fz_28 co_ff"></i>
+      </div>
+    </a>
+  </div>
+  <a href="02statistic.html" class="weui-tabbar__item weui-bar__item--on">
+    <div class="weui-tabbar__icon">
+      <i class="iconfont icon-wode"></i>
+    </div>
+    <p class="weui-tabbar__label">我的</p>
+  </a>
+</div>
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/jquery-weui.js"></script>
+<script src="../iconfont/color/iconfont.js"></script>
+<script src="../js/echarts.min.js"></script>
+<script>
+/*
+var taskChart = echarts.init(document.getElementById('ec-task'));
+option = {
+    tooltip : {
+        trigger: 'axis',
+        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        }
+    },
+    legend: {
+        data: ['五星', '四星','三星','二星','一星','无星'],
+		 left: '2%',
+        right: '2%',
+    },
+    grid: {
+        left: '4%',
+        right: '6%',
+        bottom: '0',
+        containLabel: true
+    },
+    xAxis:  {
+        type: 'value'
+    },
+    yAxis: {
+        type: 'category',
+        data: ['第一次','第二次','第三次','第四次','第五次','第六次','第七次']
+    },
+    series: [
+        {
+            name: '五星',
+			itemStyle:{normal: {color:'#2196ca'}},
+            type: 'bar',
+            stack: '总量',
+            label: {
+                normal: {
+                    show: true,
+                    position: 'insideRight'
+                }
+            },
+            data: [47, 42, 39, 38, 19, 47, 28]
+        },
+        {
+            name: '四星',
+	        itemStyle:{normal: {color:'#60C0DD'}},
+            type: 'bar',
+            stack: '总量',
+            label: {
+                normal: {
+                    show: true,
+                    position: 'insideRight'
+                }
+            },
+            data: [12, 13, 18, 17, 29, 31, 21]
+        },
+        {
+            name: '三星',
+			itemStyle:{normal: {color:'#85ca63'}},
+            type: 'bar',
+            stack: '总量',
+            label: {
+                normal: {
+                    show: true,
+                    position: 'insideRight'
+                }
+            },
+            data: [22, 18, 19, 23, 29, 10, 31]
+        },
+        {
+            name: '二星',
+			itemStyle:{normal: {color:'#F3A43B'}},
+            type: 'bar',
+            stack: '总量',
+            label: {
+                normal: {
+                    show: true,
+                    position: 'insideRight'
+                }
+            },
+            data: [15, 21, 21, 15, 19, 10, 14]
+        },
+        {
+            name: '一星',
+			itemStyle:{normal: {color:'#f76260'}},
+            type: 'bar',
+            stack: '总量',
+            label: {
+                normal: {
+                    show: true,
+                    position: 'insideRight'
+                }
+            },
+            data: [2, 3, 2, 4, 2, 1, 3]
+        },
+        {
+            name: '无星',
+			itemStyle:{normal: {color:'#c0c0c0'}},
+            type: 'bar',
+            stack: '总量',
+            label: {
+                normal: {
+                    show: true,
+                    position: 'insideRight'
+                }
+            },
+            data: [2, 3, 1, 3, 2, 1, 3]
+        },
+
+    ]
+};        // 使用刚指定的配置项和数据显示图表。
+        taskChart.setOption(option);
+
+*/</script>
+  
+</body>
+</html>

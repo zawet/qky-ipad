@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="icon" href="yd.ico">
+    <title>教育商店</title>
+    <link href="css/HFive.css" rel="stylesheet" type="text/css" />
+    <link href="js/swiper/3.4.1/css/swiper.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/edstore.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body class="qkybody">
+   <div class="loadprogress" id="loadprogress">
+        <div class="progress">
+           <div class="progressyuan">
+                        <div class="proleft pro"><b id="lb"></b></div>
+                        <div class="proright pro"><b id="rb"></b></div>
+                        <div class="protxt"><span class="bf" id="bf">0%</span></div>
+                    </div>
+        </div>
+    </div>
+    <!--头部标准，一般固定-->
+    <div class="qkyh5_header noshadow ub ub-ac">
+        <div class="back"><a href="../index.html?st=3"><i class="qkyicon">&#xe655;</i>返回</a></div>
+        <div class="title ub-f2">最新应用</div>
+        <div class="txtother"><i class="qkyicon">&#xe639;</i></a></div> 
+    </div>
+
+    <!--中部标准，一般放列表-->
+    <div class="qkyh5_main pt50">
+        <div class="allbg"></div>
+        
+    </div>
+
+    <div class="qkyh5_footbg  trn">
+        <div class="footbox ub ub-ac">
+            <a class="cur trn ub-f1">
+                <i class="qkyicon">&#xe646;</i>
+                <span>最新</span>
+             
+            </a>
+            <a class=" trn ub-f1">
+                <i class="qkyicon">&#xe604;</i>
+                <span>应用</span>
+   
+            </a>
+            <a class="trn ub-f1">
+                <i class="qkyicon">&#xe666;</i>
+                <span>我的</span>
+              
+            </a>
+        </div>
+    </div>
+    <script language="JavaScript" charset="utf-8" src="js/preloadjs-0.6.2.min.js"></script>
+    <script src="js/sea.js"></script>
+    <script src="js/seaconfig2.0.js"></script>
+    <script>
+        seajs.use(["jq","run","load"], function (j,r,load) {
+            load.preload.on("complete",function(){
+                $(".loadprogress").fadeOut(200);
+                r.index(); 
+                //load.setImg(load.preload._loadItemsById); 
+            });
+        });
+    </script>
+</body>
+
+</html>

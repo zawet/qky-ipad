@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="../image/qky2.ico">
+<title>第二课堂</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+<link rel="stylesheet" href="../css/weui.min.css">
+<link rel="stylesheet" href="../css/jquery-weui.css">
+<!--基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/common/iconfont.css">
+<link rel="stylesheet" href="../css/circle-h5.css">
+</head>
+<body ontouchstart>
+<div class="header-title weui-flex">
+  <div class="placeholder col-20"><a href="01course-list.html" class="pl10 fz_14"><i class="iconfont icon-zuo fz_20 middle mr-5"></i>切换课程</a></div>
+  <div class="t-center weui-flex__item tit-flex">
+    <div class="placeholder co_33 iblock po_r">
+      人教版精通 三期 基础版英语
+    </div>
+  </div>
+  <div class="placeholder col-20 t-right"><a href="03set.html" class="iconfont icon-set iblock fz_20 pl10 pr10"></a></div>
+</div>
+<div class=" pt44 pb50 mb12">
+  <div class="weui-panel weui-panel_access mt0">
+    <div class="weui-panel__bd cour-t39">
+      
+      <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+        <div class="weui-media-box__hd cour-box__hd">
+          <img class="weui-media-box__thumb" src="../image/The-course.jpg" alt="" width="332" height="186">
+        </div>
+        <div class="weui-media-box__bd">
+          <p class="weui-media-box__desc fz_14 co_33 mb5">学生：<span>45位</span></p>
+          <p class="weui-media-box__desc fz_14 co_33 mb5">老师：<span>张玉峰、李丽婷、李丽婷</span></p>
+        </div>
+      </a>
+    </div>
+    <div class="weui-form-preview__ft cour-ft col-100 zindex1 bg_white">
+      <a class="weui-form-preview__btn fz_15 co_33" href="01course-intro.html">
+	    <svg class="iconcolor" aria-hidden="true"><use xlink:href="#iconcolor-caidanpeizhi"></use></svg>
+        课程介绍
+      </a>
+      <a class="weui-form-preview__btn fz_15 co_33" href="01course-t_list.html">
+	    <svg class="iconcolor" aria-hidden="true"><use xlink:href="#iconcolor-application"></use></svg>
+        课程作业
+      </a>
+    </div>
+    <div class="weui-cells mt0">
+      <a class="weui-flex pt10 pb10 pl15 pr15 co_66">
+  
+        <div class="weui-flex__item cour-badges"><div class="placeholder">
+          <span class="bg_badge radius-4 fz_12 pt5 pb5 pl10 pr10 mr5">外语</span>
+          <span class="bg_badge radius-4 fz_12 pt5 pb5 pl10 pr10 mr5">英文</span>
+          <span class="bg_badge radius-4 fz_12 pt5 pb5 pl10 pr10 mr5">基础类</span>
+        
+        </div></div>
+        <div class="placeholder t-right"><i class="iconfont icon-jinrujiantou fz_20"></i></div>
+      </a>
+    </div>
+    
+  </div>
+  <div class="weui-cells__title mt12 pt10 pb10 fz_13 co_66"><i class="iconfont icon-hudong fz_14 mr5"></i>课程互动（0）</div>
+  <div class="weui-panel weui-panel_access mt0">
+    <div class="weui-panel__bd pl15 pr15" id="accor">
+      <div class="t-center pt10 pb10 ma10 co_99">
+        <p><svg class="iconcolor fz_120" aria-hidden="true"><use xlink:href="#iconcolor-zanwushuju"></use></svg></p>
+        <p class="fz_12 mb10">授课老师暂无发布动态，稍后再看看吧</p>
+      </div>
+      
+    </div>
+  </div>
+    <div class="weui-loadmore weui-loadmore_line">
+      <span class="weui-loadmore__tips">已更新全部</span>
+    </div>
+</div>
+<div class="weui-tabbar">
+  <a href="01course-c.html" class="weui-tabbar__item weui-bar__item--on">
+    <div class="weui-tabbar__icon po_r">
+      <i class="iconfont icon-kechengquan"></i>
+    </div>
+    <p class="weui-tabbar__label">课程圈</p>
+  </a>
+  
+  <a href="02statistic.html" class="weui-tabbar__item">
+    <div class="weui-tabbar__icon">
+      <i class="iconfont icon-wode"></i>
+    </div>
+    <p class="weui-tabbar__label">我的</p>
+  </a>
+</div>
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/fastclick.js"></script>
+<script src="../js/jquery-weui.js"></script>
+<script src="../js/swiper.js"></script>
+<script src="../iconfont/color/iconfont.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+	$(function(){    //展开更多
+		$("div .p-more","#accor").bind("click",function(){
+			var div=$(this).parent();
+			if(div.hasClass("fold")){
+				div.removeClass("fold");
+				$(this).find(".iconfont").removeClass("icon-gengduo1").addClass("icon-shang");
+				div.find(".foldContent").slideDown();
+				$(this).addClass("zk");
+			}else{
+				div.addClass("fold");
+				$(this).find(".iconfont").removeClass("icon-shang").addClass("icon-gengduo1");
+				div.find(".foldContent").slideUp();
+				$(this).removeClass("zk");
+			}
+		});
+	})
+	
+	$(document).ready(function() {  //点击房冒泡
+		$(".Bubble01").bind('click', function(event) {  
+		});  
+		$(".Bubble02").bind('click', function(event) {  
+			event.stopPropagation();  
+		});  
+	}); 
+      var pb1 = $.photoBrowser({
+        items: [
+          "../image/u109.jpg",
+          "../image/The-course.jpg",
+          "../image/s3.jpg",
+        ],
+
+        onSlideChange: function(index) {
+          console.log(this, index);
+        },
+
+        onOpen: function() {
+          console.log("onOpen", this);
+        },
+        onClose: function() {
+          console.log("onClose", this);
+        }
+      });
+      $(".interact-thumb").click(function() {
+        pb1.open();
+      });
+/*$(function(){//固定菜单
+	//设置标杆
+	var _line=parseInt($(window).height()/3);
+	$(window).scroll(function(){
+		//滚动159px，固定定位
+		if ($(window).scrollTop()>115) {
+			$('.cour-ft').css({'position':'fixed','top':43,'border-bottom':'1px solid #e5e5e5',});
+			$('.cour-t39').css({'margin-top':'40px'})
+		}else{
+			$('.cour-ft').css({'position':'','top':'','border-bottom':''});
+			$('.cour-t39').css({'margin-top':''})
+		};
+	});
+});*/
+  $(document).on("click", "#show-actions", function() {
+	$.actions({
+	  title: "选择操作",
+	  onClose: function() {
+		console.log("close");
+	  },
+	  actions: [
+		{
+		  text: "置顶",
+		  className: "color-warning",
+		},
+		{
+		  text: "删除",
+		  className: 'color-danger',
+		  onClick: function() {
+			$.alert("你选择了“删除”");
+		  }
+		}
+	  ]
+	});
+  });
+      $(document).on("click", "#show-common", function() {
+        $.actions({
+          actions: [
+            {
+              text: ' <div class="weui-flex pl10 pr10"><div class="weui-flex__item"><div class="placeholder"><div contenteditable="true" class="textbox t-left pt5 pb5" placeholder=""></div> </div></div><div class="placeholder t-right"><a href="01course-c.html" class="weui-btn weui-btn_mini weui-btn_primary bor-no pt5 pb5">发送</a></div></div>',
+              className: "Bubble01 pb5",
+            }
+          ]
+        });
+      });
+      $(document).on("click", "#show-reply", function() {
+        $.actions({
+          actions: [
+            {
+              text: ' <div class="weui-flex pl10 pr10"><div class="weui-flex__item"><div class="placeholder"><div contenteditable="true" class="textbox t-left pt5 pb5" placeholder="回复XXX："></div> </div></div><div class="placeholder t-right"><a href="01course-c.html" class="weui-btn weui-btn_mini weui-btn_primary bor-no pt5 pb5">发送</a></div></div>',
+              className: "Bubble01 pb5",
+            }
+          ]
+        });
+      });
+
+</script>
+  
+</body>
+</html>

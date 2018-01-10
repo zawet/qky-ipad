@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="../image/qky2.ico">
+<title>第二课堂</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+<link rel="stylesheet" href="../css/weui.min.css">
+<link rel="stylesheet" href="../css/jquery-weui.css">
+<!--基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/common/iconfont.css">
+<link rel="stylesheet" href="../css/circle-h5.css">
+</head>
+<body ontouchstart class="bg_white">
+<div class="header-title weui-flex">
+  <div class="placeholder"><a href="01course-c.html" class="fz_15 co_66 pb10 pl15 pr15 iblock mr5">取消</a></div>
+  <div class="weui-flex__item">
+    <div class="weui-flex co_33">
+      <div class="weui-flex__item t-center"><div class="placeholder tit-flex">发动态</div></div>
+    </div>
+  </div>
+  <div class="placeholder t-right"><a href="01course-c.html" class="weui-btn weui-btn_mini weui-btn_primary mt5 mr5 bor-no">发送</a></div>
+</div>
+<div class="pt44">
+  <div class="pt10 pr15 pb10 pl15 fz_0">
+   <textarea name="" cols="" rows="6" class="col-100 bor-no send-txtare fz_16" placeholder="说点什么......"></textarea>
+   
+  </div>
+  <div class="weui-cells mt0">
+    <a href="javascript:;" id="mss-stus" class="weui-flex pt10 pb10 pl15 pr15 co_66">
+
+      <div class="weui-flex__item cour-badges"><div class="placeholder">
+        @想表扬的学生
+      
+      </div></div>
+      <div class="placeholder t-right"><i class="iconfont icon-jinrujiantou fz_20"></i></div>
+    </a>
+  </div>
+  <!--关联后-->
+  <!--
+  <div class="weui-cells mt0">
+    <a href="javascript:;" id="mss-stus" class="weui-flex pt10 pb10 pl15 pr15 co_66">
+
+      <div class="weui-flex__item cour-badges"><div class="placeholder">
+        @李晓明、王思雨、于子涵、赵璐瑶、于辰辰、李战、阚琴、杜兰特
+      
+      </div></div>
+      <div class="placeholder t-right"><i class="iconfont icon-jinrujiantou fz_20"></i></div>
+    </a>
+  </div>
+  -->
+  <div class=" bg_white pl15 pr15 mt0">
+    <div class="weui-flex fz_14">
+      <a href="javascript:;" id='show-picture' class="placeholder pl5 pr5 iblock mr20"><i class="iconfont icon-pic ma5 iblock fz_24"></i></a>
+      <a href="javascript:;" id='show-voice' class="placeholder pl5 pr5 iblock mr20"><i class="iconfont icon-voice ma5 iblock fz_24"></i></a>
+      <a href="javascript:;" id='show-vedio' class="placeholder pl5 pr5 iblock mr20"><i class="iconfont icon-shipin2 ma5 iblock fz_24"></i></a>
+    </div>
+    <!--上传图片列表-->
+    
+    <div class=" weui-cells_form">
+      <div class="weui-cell pl5 pr5">
+        <div class="weui-cell__bd">
+          <div class="weui-uploader">
+            <div class="weui-uploader__hd">
+              <p class="weui-uploader__title">图片上传</p>
+              <div class="weui-uploader__info">3/9</div>
+            </div>
+            <div class="weui-uploader__bd">
+              <ul class="weui-uploader__files" id="uploaderFiles">
+                <li class="weui-uploader__file po_r" style="background-image:url(../image/u109.jpg)"><a href="javascript:;" class="po_ab_r close-a"><i class="iconfont icon-close"></i></a></li>
+                <li class="weui-uploader__file po_r weui-uploader__file_status" style="background-image:url()">
+                  <a href="javascript:;" class="po_ab_r close-a"><i class="iconfont icon-close"></i></a>
+                  <div class="weui-uploader__file-content">
+                    <i class="weui-icon-warn"></i>
+                  </div>
+                </li>
+                <li class="weui-uploader__file po_r weui-uploader__file_status" style="background-image:url()">
+                  <a href="javascript:;" class="po_ab_r close-a"><i class="iconfont icon-close"></i></a>
+                  <div class="weui-uploader__file-content">50%</div>
+                </li>
+              </ul>
+              <div class="weui-uploader__input-box">
+                <input id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" multiple>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--上传图片列表结束-->
+    
+    <!--上传视频-->
+    
+    <div class=" weui-cells_form">
+      <div class="weui-cell pl5 pr5">
+        <div class="weui-cell__bd">
+          <div class="weui-uploader">
+            <div class="weui-uploader__hd">
+              <p class="weui-uploader__title">视频上传</p>
+            </div>
+            <div class="weui-uploader__bd">
+              <div class="weui-progress pb10">
+				  <div class="weui-progress__bar">
+				   <div class="weui-progress__inner-bar js_progress" style="width: 80%;"></div>
+				  </div>
+			       <a href="javascript:;" class="weui-progress__opr">
+				    <i class="weui-icon-cancel"></i>
+				  </a>
+			    </div>
+              
+            </div>
+            <div class="mt5 iblock po_r fz_0">
+              <span class="vedio-btn po_ab_l iblock"><i class="iconfont icon-kaishi1 po_ab_l fz_30 co_ff"></i></span>
+              <img src="../image/u147.jpg" class="vedio-img Bubble02">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--上传视频结束-->
+    <!--语音-->
+    <div class="mt5 mb10 iblock col-70 co_66">
+     <div class="po_r interact-voice Bubble02 fl col-70 pl10 right"><i class="arrow"></i><span class="bg_gray bor-ddd iblock col-100 radius-4 pt5 pb5 pl10">
+       <i class="iconfont icon-voice1 fz_18"></i>
+     </span></div>
+     <span class="ml10 fz_14 iblock">8"</span>
+    </div>
+    <div class="mt5 mb10 iblock col-70 co_66"><!--语音声波-->
+     <div class="po_r interact-voice Bubble02 fl col-70 pl10 right"><i class="arrow"></i><span class="bg_gray bor-ddd iblock col-100 radius-4 pt5 pb5 pl10">
+       <img src="../image/voice.gif" width="15" height="18" class="voice-gif">
+     </span></div>
+     <span class="ml10 fz_14 iblock">8"</span>
+    </div>
+    <!--语音结束-->
+  </div>
+  <div class="weui-cells mt0">
+      <div class="clear fz_12 co_99 mt15 ml15">如需家长上传作业，请选择[作业]标签</div>
+      <div class="weui-flex pt10 pb10 pl15 pr15 co_66">
+        <div class="weui-flex__item cour-badges fz_0"><div class="placeholder">
+          <span class="bg_badge radius-4 fz_12 pl10 pr10 iblock mt5 mb5 mr10">作业</span>
+          <span class="bor-green co_green radius-4 fz_12 pl10 pr10 iblock mt5 mb5 mr10">作业</span><!--选中-->
+          <span class="bg_badge radius-4 fz_12 pl10 pr10 iblock mt5 mb5 mr10">通知</span>
+          <span class="bor-org color-warning radius-4 fz_12 pl10 pr10 iblock mt5 mb5 mr10">通知</span><!--选中-->
+        </div></div>
+      </div>
+    </div>
+</div>
+<div class="weui-dialog weui-dialog--visible stus-list hide" id="msg-stus">
+  <div class="header-title weui-flex">
+    <div class="placeholder"><a href="javascript:;" onClick="$('#msg-stus').fadeOut();" class="fz_15 co_66 pb10 pl15 pr15 iblock mr5">取消</a></div>
+    <div class="weui-flex__item">
+      <div class="weui-flex co_33">
+        <div class="weui-flex__item t-center"><div class="placeholder tit-flex">关联学生<span class="co_99 fz_14">（只限10个学生）</span></div></div>
+      </div>
+    </div>
+    <div class="placeholder t-right"><a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_primary mt5 mr5 bor-no">完成</a></div>
+  </div>
+  <div class="pt44 po_r">
+    <div class="weui-cells weui-cells_checkbox mt0 t-left">
+      <label class="weui-cell weui-check__label" for="s11">
+        <div class="weui-cell__hd">
+          <input type="checkbox" class="weui-check" name="checkbox1" id="s11" checked="checked">
+          <i class="weui-icon-checked"></i>
+        </div>
+        <div class="weui-cell__bd">
+          <p>吴晓辉</p>
+        </div>
+      </label>
+      <label class="weui-cell weui-check__label" for="s12">
+        <div class="weui-cell__hd">
+          <input type="checkbox" name="checkbox1" class="weui-check" id="s12">
+          <i class="weui-icon-checked"></i>
+        </div>
+        <div class="weui-cell__bd">
+          <p>于子涵</p>
+        </div>
+      </label>
+      <label class="weui-cell weui-check__label" for="s13">
+        <div class="weui-cell__hd">
+          <input type="checkbox" class="weui-check" name="checkbox1" id="s13">
+          <i class="weui-icon-checked"></i>
+        </div>
+        <div class="weui-cell__bd">
+          <p>吴晓辉</p>
+        </div>
+      </label>
+      <label class="weui-cell weui-check__label" for="s14">
+        <div class="weui-cell__hd">
+          <input type="checkbox" name="checkbox1" class="weui-check" id="s14">
+          <i class="weui-icon-checked"></i>
+        </div>
+        <div class="weui-cell__bd">
+          <p>于子涵</p>
+        </div>
+      </label>
+      <label class="weui-cell weui-check__label" for="s15">
+        <div class="weui-cell__hd">
+          <input type="checkbox" class="weui-check" name="checkbox1" id="s15">
+          <i class="weui-icon-checked"></i>
+        </div>
+        <div class="weui-cell__bd">
+          <p>吴晓辉</p>
+        </div>
+      </label>
+      <label class="weui-cell weui-check__label" for="s16">
+        <div class="weui-cell__hd">
+          <input type="checkbox" name="checkbox1" class="weui-check" id="s16">
+          <i class="weui-icon-checked"></i>
+        </div>
+        <div class="weui-cell__bd">
+          <p>于子涵</p>
+        </div>
+      </label>
+      <label class="weui-cell weui-check__label" for="s17">
+        <div class="weui-cell__hd">
+          <input type="checkbox" class="weui-check" name="checkbox1" id="s17">
+          <i class="weui-icon-checked"></i>
+        </div>
+        <div class="weui-cell__bd">
+          <p>吴晓辉</p>
+        </div>
+      </label>
+      <label class="weui-cell weui-check__label" for="s18">
+        <div class="weui-cell__hd">
+          <input type="checkbox" name="checkbox1" class="weui-check" id="s18">
+          <i class="weui-icon-checked"></i>
+        </div>
+        <div class="weui-cell__bd">
+          <p>于子涵</p>
+        </div>
+      </label>
+      <label class="weui-cell weui-check__label" for="s19">
+        <div class="weui-cell__hd">
+          <input type="checkbox" class="weui-check" name="checkbox1" id="s19">
+          <i class="weui-icon-checked"></i>
+        </div>
+        <div class="weui-cell__bd">
+          <p>吴晓辉</p>
+        </div>
+      </label>
+      <label class="weui-cell weui-check__label" for="s20">
+        <div class="weui-cell__hd">
+          <input type="checkbox" name="checkbox1" class="weui-check" id="s20">
+          <i class="weui-icon-checked"></i>
+        </div>
+        <div class="weui-cell__bd">
+          <p>于子涵</p>
+        </div>
+      </label>
+      <label class="weui-cell weui-check__label" for="s21">
+        <div class="weui-cell__hd">
+          <input type="checkbox" class="weui-check" name="checkbox1" id="s21">
+          <i class="weui-icon-checked"></i>
+        </div>
+        <div class="weui-cell__bd">
+          <p>吴晓辉</p>
+        </div>
+      </label>
+      <label class="weui-cell weui-check__label" for="s22">
+        <div class="weui-cell__hd">
+          <input type="checkbox" name="checkbox1" class="weui-check" id="s22">
+          <i class="weui-icon-checked"></i>
+        </div>
+        <div class="weui-cell__bd">
+          <p>于子涵</p>
+        </div>
+      </label>
+      <label class="weui-cell weui-check__label" for="s23">
+        <div class="weui-cell__hd">
+          <input type="checkbox" class="weui-check" name="checkbox1" id="s23">
+          <i class="weui-icon-checked"></i>
+        </div>
+        <div class="weui-cell__bd">
+          <p>吴晓辉</p>
+        </div>
+      </label>
+      <label class="weui-cell weui-check__label" for="s24">
+        <div class="weui-cell__hd">
+          <input type="checkbox" name="checkbox1" class="weui-check" id="s24">
+          <i class="weui-icon-checked"></i>
+        </div>
+        <div class="weui-cell__bd">
+          <p>于子涵</p>
+        </div>
+      </label>
+      <label class="weui-cell weui-check__label" for="s25">
+        <div class="weui-cell__hd">
+          <input type="checkbox" class="weui-check" name="checkbox1" id="s25">
+          <i class="weui-icon-checked"></i>
+        </div>
+        <div class="weui-cell__bd">
+          <p>吴晓辉</p>
+        </div>
+      </label>
+      <label class="weui-cell weui-check__label" for="s26">
+        <div class="weui-cell__hd">
+          <input type="checkbox" name="checkbox1" class="weui-check" id="s26">
+          <i class="weui-icon-checked"></i>
+        </div>
+        <div class="weui-cell__bd">
+          <p>于子涵</p>
+        </div>
+      </label>
+      <label class="weui-cell weui-check__label" for="s27">
+        <div class="weui-cell__hd">
+          <input type="checkbox" class="weui-check" name="checkbox1" id="s27">
+          <i class="weui-icon-checked"></i>
+        </div>
+        <div class="weui-cell__bd">
+          <p>吴晓辉</p>
+        </div>
+      </label>
+      <label class="weui-cell weui-check__label" for="s28">
+        <div class="weui-cell__hd">
+          <input type="checkbox" name="checkbox1" class="weui-check" id="s28">
+          <i class="weui-icon-checked"></i>
+        </div>
+        <div class="weui-cell__bd">
+          <p>于子涵</p>
+        </div>
+      </label>
+    </div>
+  </div>
+</div>
+<!--加载提示-->
+<!--<div class="weui-toast weui_loading_toast weui-toast--visible"><div class="weui_loading"><i class="weui-loading weui-icon_toast"></i></div><p class="weui-toast_content fz_14">数据加载中<span>99%</span></p></div>-->
+<!--加载提示over-->
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/fastclick.js"></script>
+<script src="../js/jquery-weui.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+$('.send-txtare').keyup(function () {
+    $(this).height(this.scrollHeight);
+});
+
+  $(document).on("click", "#show-picture", function() {
+	$.actions({
+	  title: '',
+	  onClose: function() {
+		console.log("close");
+	  },
+	  actions: [
+		{
+		  text: '拍照',
+		  className: "",
+		  autoClose: false,
+		},
+		{
+		  text: '从相册上传',
+		  className: "",
+		  autoClose: false,
+		},
+	  ]
+	});
+  });
+  $(document).on("click", "#show-voice", function() {
+	$.actions({
+	  title: '<div class="toolbar">    <div class="toolbar-inner">    <a href="javascript:;" class="picker-button">完成</a>    <h1 class="title fz_16">点击开始录音</h1>    </div>  ',
+	  onClose: function() {
+		console.log("close");
+	  },
+	  actions: [
+		{
+		  //text: '<a href="javascript:;" class="div-voice block bg-success radius-cirle mt15"><i class="iconfont icon-voice iblock fz_30"></i></a>',//默认
+		  //text: '<a href="javascript:;" class="div-voice block bg-success radius-cirle mt15 anima-voice"><i class="iconfont icon-jieshuanniu iblock fz_26"></i></a>',//录音中
+		  text: '<a href="javascript:;" class="div-voice block bg-success radius-cirle"><i class="iconfont icon-kaishi iblock fz_26"></i></a> <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_plain-primary mt10">重录</a>',//录音完毕
+		  //text: '<a href="javascript:;" class="div-voice block bg-success radius-cirle anima-voice"><i class="iconfont icon-zanting iblock fz_26"></i></a> <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_plain-primary mt10">重录</a>',//录音试听
+		  className: "voice-box mauto mt20 pa0 hidden",
+		  autoClose: false,
+		},
+	  ]
+	});
+  });
+
+  $(document).on("click", "#show-vedio", function() {
+	$.actions({
+	  title: '<div class="toolbar">    <div class="toolbar-inner">    <a href="javascript:;" class="picker-button">完成</a>    <h1 class="title fz_16">上传视频</h1>    </div>  ',
+	  onClose: function() {
+		console.log("close");
+	  },
+	  actions: [
+		{
+		  text: '<div class="mauto mt20 mb20 col-100"><a href="javascript:;" class="weui-btn weui-btn_plain-primary"><i class="iconfont icon-zengjia mr5"></i>选择视频</a></div>',
+		  className: "vedio-box mauto mt20 mb20 pa0",
+		  autoClose: false,
+		},
+	  ]
+	});
+  });
+$(function(){
+$('#mss-stus').click(function(){
+$('#msg-stus').fadeIn();
+})
+});    
+  
+</script>
+  
+</body>
+</html>

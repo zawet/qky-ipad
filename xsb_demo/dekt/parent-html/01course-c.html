@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="../image/qky2.ico">
+<title>第二课堂</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+<link rel="stylesheet" href="../css/weui.min.css">
+<link rel="stylesheet" href="../css/jquery-weui.css">
+<!--基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/common/iconfont.css">
+<link rel="stylesheet" href="../css/circle-h5.css">
+</head>
+<body ontouchstart>
+<div class="header-title weui-flex">
+  <div class="placeholder col-20"><a href="01course-list.html" class="pl10 fz_14"><i class="iconfont icon-zuo fz_20 middle mr-5"></i>切换课程</a></div>
+  <div class="t-center weui-flex__item tit-flex">
+    <div class="placeholder co_33 iblock po_r">
+      人教版精通 三期 基础版英语
+    </div>
+  </div>
+  <div class="placeholder col-20 t-right"><a href="03set.html" class="iconfont icon-set iblock fz_20 pl10 pr10"></a></div>
+</div>
+<div class=" pt44 pb50 mb12">
+  <div class="weui-panel weui-panel_access mt0">
+    <div class="weui-panel__bd cour-t39">
+      
+      <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+        <div class="weui-media-box__hd cour-box__hd">
+          <img class="weui-media-box__thumb" src="../image/The-course.jpg" alt="" width="332" height="186">
+        </div>
+        <div class="weui-media-box__bd">
+          <p class="weui-media-box__desc fz_14 co_33 mb5">学生：<span>45位</span></p>
+          <p class="weui-media-box__desc fz_14 co_33 mb5">老师：<span>张玉峰、李丽婷、李丽婷</span></p>
+        </div>
+      </a>
+    </div>
+    <div class="weui-form-preview__ft cour-ft col-100 zindex1 bg_white">
+      <a class="weui-form-preview__btn fz_15 co_33" href="01course-intro.html">
+	    <svg class="iconcolor" aria-hidden="true"><use xlink:href="#iconcolor-caidanpeizhi"></use></svg>
+        课程介绍
+      </a>
+      <a class="weui-form-preview__btn fz_15 co_33" href="01course-t_list.html">
+	    <svg class="iconcolor" aria-hidden="true"><use xlink:href="#iconcolor-application"></use></svg>
+        课程作业<i class="iconfont icon-new color-danger fz_24 middle"></i>
+      </a>
+    </div>
+    <div class="weui-cells mt0">
+      <a class="weui-flex pt10 pb10 pl15 pr15 co_66">
+  
+        <div class="weui-flex__item cour-badges"><div class="placeholder">
+          <span class="bg_badge radius-4 fz_12 pt5 pb5 pl10 pr10 mr5">外语</span>
+          <span class="bg_badge radius-4 fz_12 pt5 pb5 pl10 pr10 mr5">英文</span>
+          <span class="bg_badge radius-4 fz_12 pt5 pb5 pl10 pr10 mr5">基础类</span>
+        
+        </div></div>
+        <div class="placeholder t-right"><i class="iconfont icon-jinrujiantou fz_20"></i></div>
+      </a>
+    </div>
+    
+  </div>
+  <div class="weui-cells__title mt12 pt10 pb10 fz_13 co_66"><i class="iconfont icon-hudong fz_14 mr5"></i>课程互动（5）</div>
+  <div class="weui-panel weui-panel_access mt0">
+    <div class="weui-panel__bd pl15 pr15" id="accor">
+      <div class="interact-box po_r pt10 pb10">
+        <div class=" po_ab_l radius-cirle mt12">
+          <img class="weui-media-box__thumb radius-cirle" src="../image/teacher.jpg" alt="">
+        </div>
+        <div class="weui-media-box__bd">
+          <h4 class="weui-media-box__title weui-flex fz_14">
+              <div class="weui-flex__item">
+                <div class="placeholder co_66 mt5">张玉峰老师</div>
+                
+              </div>
+              <span class="placeholder mt5 color-warning">[置顶]</span>
+              <a href="javascript:;" id='show-actions' class="iconfont icon-switch placeholder pl10 co_33 fz_22"></a>
+          </h4>
+          <div onclick="window.open('01course-detail_no.html','_self')" class="block Bubble01 mt5">
+              <p class="co_33 fz_15"><span class="radius-4 bor-green co_green pl5 pr5 mr5">作业</span>由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</p>
+              <p class="fz_12">——点击上传作业</p>
+          </div>
+          <div class="bg_gray col-100 pa10 mt5 mb5 iblock co_33 fz_14">
+            <div class="clearfix fold">
+              <a  href="javascript:;" id='show-reply' class="block co_66"><span class="co_99">杨华英老师：</span>张老师说的很好，向你学习。</a>
+              <a  href="javascript:;" id='show-reply' class="block co_66"><span class="co_99">赵晓宇家长：</span>张老师有个问题想请教一下，关于这个作
+    业具体上交截止时间是什么时候呢？</a>
+              <div class="foldContent" style="display:none;">
+                <a  href="javascript:;" id='show-reply' class="block co_66"><span class="co_99">杨华英老师</span><span class="ml5 mr5">回复</span><span class="co_99">杨华英老师：</span>张老师说的很好，向你学习。</a>
+                <a  href="javascript:;" id='show-reply' class="block co_66"><span class="co_99">赵晓宇家长：</span>张老师有个问题想请教一下，关于这个作
+      业具体上交截止时间是什么时候呢？</a>
+              </div>
+              <p class="mt5 color-blue fz_12 p-more"><i class="iconfont icon-gengduo1 fz_12"></i></p>
+            </div>
+          </div>
+          <div class="weui-flex mt5 fz_14">
+            <div class="weui-flex__item fz_12"><span class="placeholder pr5 iblock co_99">35分钟前</span></div>
+            <a href="javascript:;" id='show-common' class="placeholder mr20 co_33 pl5 pr5 iblock"><i class="iconfont icon-comm mr5"></i>4</a>
+            <a class="placeholder color-warning pl5 pr5 iblock"><i class="iconfont icon-ok mr5"></i>51</a>
+          </div>
+        </div>
+      </div>
+      <div class="interact-box po_r pt10 pb10">
+        <div class=" po_ab_l radius-cirle mt12">
+          <img class="weui-media-box__thumb radius-cirle" src="../image/teacher_tx.jpg" alt="">
+        </div>
+        <div class="weui-media-box__bd">
+          <h4 class="weui-media-box__title weui-flex fz_14">
+            <div class="weui-flex__item">
+              <div class="placeholder co_66 mt5">李长涛老师</div>
+              <!--<div class="placeholder co_99 fz_10">1小时前</div>-->
+            </div>
+            <a href="javascript:;" id='show-actions' class="iconfont icon-switch placeholder pl10 co_33 fz_22"></a>
+          </h4>
+          <div onclick="window.open('01course-detail-2.html','_self')" class="block Bubble01 mt5">
+            <p class="co_33 fz_15">这次我们同学们玩的都很开心，能够很好的从中建立友好情况。</p>
+            <div class="mt5 mb5 iblock col-70 co_66">
+             <div class="po_r interact-voice Bubble02 iblock col-70 pl10 right"><i class="arrow"></i><span class="bg_gray bor-ddd iblock col-100 radius-4 pt5 pb5 pl10"><i class="iconfont icon-voice1 fz_18"></i></span></div>
+             <span class="ml10 fz_14">8"</span>
+            </div>
+          </div>
+          <div class="bg_gray col-100 pa10 mt5 mb5 iblock co_33 fz_14">
+            <div class="clearfix fold">
+              <a  href="javascript:;" id='show-reply' class="block co_66"><span class="co_99">杨华英老师：</span>张老师说的很好，向你学习。</a>
+              <a  href="javascript:;" id='show-reply' class="block co_66"><span class="co_99">赵晓宇家长：</span>张老师有个问题想请教一下，关于这个作
+    业具体上交截止时间是什么时候呢？</a>
+              <div class="foldContent" style="display:none;">
+                <a  href="javascript:;" id='show-reply' class="block co_66"><span class="co_99">杨华英老师</span><span class="ml5 mr5">回复</span><span class="co_99">杨华英老师：</span>张老师说的很好，向你学习。</a>
+                <a  href="javascript:;" id='show-reply' class="block co_66"><span class="co_99">赵晓宇家长：</span>张老师有个问题想请教一下，关于这个作
+      业具体上交截止时间是什么时候呢？</a>
+              </div>
+              <p class="mt5 color-blue fz_12 p-more"><i class="iconfont icon-gengduo1 fz_12"></i></p>
+            </div>
+          </div>
+          <div class="weui-flex mt5 fz_14">
+            <div class="weui-flex__item fz_12"><span class="placeholder pr5 iblock co_99">8分钟前</span></div>
+            <a href="javascript:;" id='show-common' class="placeholder mr20 co_33 pl5 pr5 iblock"><i class="iconfont icon-comm mr5"></i>4</a>
+            <a class="placeholder co_33 pl5 pr5 iblock"><i class="iconfont icon-ok1 mr5"></i>43</a>
+          </div>
+        </div>
+      </div>
+      <div class="interact-box po_r pt10 pb10">
+        <div class=" po_ab_l radius-cirle mt12">
+          <img class="weui-media-box__thumb radius-cirle" src="../image/teacher.jpg" alt="">
+        </div>
+        <div class="weui-media-box__bd">
+          <h4 class="weui-media-box__title weui-flex fz_14">
+            <div class="weui-flex__item">
+              <div class="placeholder co_66 mt5">马国强老师</div>
+              
+            </div>
+            <a href="javascript:;" id='show-actions' class="iconfont icon-switch placeholder pl10 co_33 fz_22"></a>
+          </h4>
+          <div onclick="window.open('01course-detail-2.html','_self')" class="block Bubble01 mt5">
+            <p class="co_33 fz_15">今天同学们上课很不错。</p>
+            <div class="mt5 iblock fz_0">
+               <a href="javascript:;" onclick="$('.weui-gallery')" class="interact-thumb thumb-s Bubble02 iblock mr5 mb5" style="background-image:url(../image/u109.jpg);"></a>
+               <a href="javascript:;" onclick="$('.weui-gallery')" class="interact-thumb thumb-s Bubble02 iblock mr5 mb5" style="background-image:url(../image/The-course.jpg);"></a>
+               <a href="javascript:;" onclick="$('.weui-gallery')" class="interact-thumb thumb-s Bubble02 iblock mr5 mb5" style="background-image:url(../image/s3.jpg);"></a>
+            </div>
+          </div>
+          <p class="mb5 fz_12 co_66">表扬了：郭丽华、杨娟、何智娴</p>
+          <div class="bg_gray col-100 pa10 mt5 mb5 iblock co_33 fz_14">
+            <div class="clearfix fold">
+              <a  href="javascript:;" id='show-reply' class="block co_66"><span class="co_99">杨华英老师：</span>张老师说的很好，向你学习。</a>
+            </div>
+          </div>
+          <div class="weui-flex mt5 fz_14">
+            <div class="weui-flex__item fz_12"><span class="placeholder pr5 iblock co_99">25分钟前</span></div>
+            <a href="javascript:;" id='show-common' class="placeholder mr20 co_33 pl5 pr5 iblock"><i class="iconfont icon-comm mr5"></i>4</a>
+            <a class="placeholder co_33 pl5 pr5 iblock"><i class="iconfont icon-ok1 mr5"></i>43</a>
+          </div>
+        </div>
+      </div>
+      <div class="interact-box po_r pt10 pb10">
+        <div class=" po_ab_l radius-cirle mt12">
+          <img class="weui-media-box__thumb radius-cirle" src="../image/teacher.jpg" alt="">
+        </div>
+        <div class="weui-media-box__bd">
+          <h4 class="weui-media-box__title weui-flex fz_14">
+            <div class="weui-flex__item">
+              <div class="placeholder co_66 mt5">马国强老师</div>
+              
+            </div>
+            <a href="javascript:;" id='show-actions' class="iconfont icon-switch placeholder pl10 co_33 fz_22"></a>
+          </h4>
+          <div onclick="window.open('01course-detail-2.html','_self')" class="block Bubble01 mt5">
+            <p class="co_33 fz_15">今天同学们上课很不错。</p>
+            <div class="mt5 iblock fz_0">
+               <a href="javascript:;" onclick="$('.weui-gallery')" class="interact-thumb thumb-b Bubble02 iblock mr5 mb5" style="background-image:url(../image/u109.jpg);"></a>
+               <a href="javascript:;" onclick="$('.weui-gallery')" class="interact-thumb thumb-b Bubble02 iblock mr5 mb5" style="background-image:url(../image/The-course.jpg);"></a>
+            </div>
+          </div>
+          <p class="mb5 fz_12 co_66">表扬了：郭丽华、杨娟、何智娴</p>
+          <div class="bg_gray col-100 pa10 mt5 mb5 iblock co_33 fz_14">
+            <div class="clearfix fold">
+              <a  href="javascript:;" id='show-reply' class="block co_66"><span class="co_99">杨华英老师：</span>张老师说的很好，向你学习。</a>
+            </div>
+          </div>
+          <div class="weui-flex mt5 fz_14">
+            <div class="weui-flex__item fz_12"><span class="placeholder pr5 iblock co_99">25分钟前</span></div>
+            <a href="javascript:;" id='show-common' class="placeholder mr20 co_33 pl5 pr5 iblock"><i class="iconfont icon-comm mr5"></i>4</a>
+            <a class="placeholder co_33 pl5 pr5 iblock"><i class="iconfont icon-ok1 mr5"></i>43</a>
+          </div>
+        </div>
+      </div>
+      <div class="interact-box po_r pt10 pb10">
+        <div class=" po_ab_l radius-cirle mt12">
+          <img class="weui-media-box__thumb radius-cirle" src="../image/teacher.jpg" alt="">
+        </div>
+        <div class="weui-media-box__bd">
+          <h4 class="weui-media-box__title weui-flex fz_14">
+            <div class="weui-flex__item">
+              <div class="placeholder co_66 mt5">马国强老师</div>
+            </div>
+            <a href="javascript:;" id='show-actions' class="iconfont icon-switch placeholder pl10 co_33 fz_22"></a>
+          </h4>
+          <div onclick="window.open('01course-detail-2.html','_self')" class="block Bubble01 mt5">
+              <p class="co_33 fz_15"><span class="radius-4 bor-org color-warning pl5 pr5 mr5">通知</span>今天的课后作业已发布，请家长监督小孩完成并提交今天的课后作业已发布，请家长监督小孩完成并提交</p>
+              <p class="fz_12">——点击上传作业</p>
+            <div class="mt5 iblock po_r fz_0">
+              <span class="vedio-btn po_ab_l iblock"><i class="iconfont icon-kaishi1 po_ab_l fz_30 co_ff"></i></span>
+              <img src="../image/u147.jpg" class="vedio-img Bubble02">
+            </div>
+          </div>
+          <div class="bg_gray col-100 pa10 mt5 mb5 iblock co_33 fz_14">
+            <div class="clearfix fold">
+              <a  href="javascript:;" id='show-reply' class="block co_66"><span class="co_99">杨华英老师：</span>张老师说的很好，向你学习。</a>
+              <a  href="javascript:;" id='show-reply' class="block co_66"><span class="co_99">赵晓宇家长：</span>张老师有个问题想请教一下，关于这个作
+    业具体上交截止时间是什么时候呢？</a>
+            </div>
+          </div>
+          <div class="weui-flex mt5 fz_14">
+            <div class="weui-flex__item fz_12"><span class="placeholder pr5 iblock co_99">35分钟前</span></div>
+            <a href="javascript:;" id='show-common' class="placeholder mr20 co_33 pl5 pr5 iblock"><i class="iconfont icon-comm mr5"></i></a>
+            <a class="placeholder co_33 pl5 pr5 iblock"><i class="iconfont icon-ok1 mr5"></i>43</a>
+          </div>
+        </div>
+      </div>
+      <div class="interact-box po_r pt10 pb10">
+        <div class=" po_ab_l radius-cirle mt12">
+          <img class="weui-media-box__thumb radius-cirle" src="../image/teacher.jpg" alt="">
+        </div>
+        <div class="weui-media-box__bd">
+          <h4 class="weui-media-box__title weui-flex fz_14">
+            <div class="weui-flex__item">
+              <div class="placeholder co_66 mt5">马国强老师</div>
+            </div>
+            <a href="javascript:;" id='show-actions' class="iconfont icon-switch placeholder pl10 co_33 fz_22"></a>
+          </h4>
+          <div onclick="window.open('01course-detail-2.html','_self')" class="block Bubble01 mt5">
+              <p class="co_33 fz_15"><span class="radius-4 bor-org color-warning pl5 pr5 mr5">通知</span>今天的课后作业已发布，请家长监督小孩完成并提交今天的课后作业已发布，请家长监督小孩完成并提交</p>
+              <p class="fz_12">——点击上传作业</p>
+            <div class="mt5 iblock po_r fz_0">
+              <span class="vedio-btn po_ab_l iblock"><i class="weui-loading weui-icon_toast po_ab_l"></i></span>
+              <img src="../image/u147.jpg" class="vedio-img Bubble02">
+            </div>
+          </div>
+          <div class="bg_gray col-100 pa10 mt5 mb5 iblock co_33 fz_14">
+            <div class="clearfix fold">
+              <a  href="javascript:;" id='show-reply' class="block co_66"><span class="co_99">杨华英老师：</span>张老师说的很好，向你学习。</a>
+              <a  href="javascript:;" id='show-reply' class="block co_66"><span class="co_99">赵晓宇家长：</span>张老师有个问题想请教一下，关于这个作
+    业具体上交截止时间是什么时候呢？</a>
+            </div>
+          </div>
+          <div class="weui-flex mt5 fz_14">
+            <div class="weui-flex__item fz_12"><span class="placeholder pr5 iblock co_99">35分钟前</span></div>
+            <a href="javascript:;" id='show-common' class="placeholder mr20 co_33 pl5 pr5 iblock"><i class="iconfont icon-comm mr5"></i></a>
+            <a class="placeholder co_33 pl5 pr5 iblock"><i class="iconfont icon-ok1 mr5"></i>43</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+    <div class="weui-loadmore weui-loadmore_line">
+      <span class="weui-loadmore__tips">已更新全部</span>
+    </div>
+</div>
+<div class="weui-tabbar">
+  <a href="01course-c.html" class="weui-tabbar__item weui-bar__item--on">
+    <div class="weui-tabbar__icon po_r">
+      <i class="iconfont icon-kechengquan"></i>
+      <span class="weui-badge badge-new" style="position: absolute;top:-1px;right:-10px;">14</span>
+    </div>
+    <p class="weui-tabbar__label">课程圈</p>
+  </a>
+  
+  <a href="02statistic.html" class="weui-tabbar__item">
+    <div class="weui-tabbar__icon">
+      <i class="iconfont icon-wode"></i>
+    </div>
+    <p class="weui-tabbar__label">我的</p>
+  </a>
+</div>
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/jquery-weui.js"></script>
+<script src="../js/swiper.js"></script>
+<script src="../iconfont/color/iconfont.js"></script>
+<script>
+
+/*scaleW=window.innerWidth/320;
+scaleH=window.innerHeight/504;
+var resizes = document.querySelectorAll('.resize');
+          for (var j=0; j<resizes.length; j++) {
+           resizes[j].style.width=parseInt(resizes[j].style.width)*scaleW+'px';
+		   resizes[j].style.height=parseInt(resizes[j].style.height)*scaleH+'px';
+		   resizes[j].style.top=parseInt(resizes[j].style.top)*scaleH+'px';
+		   resizes[j].style.left=parseInt(resizes[j].style.left)*scaleW+'px'; 
+          }
+*/
+	$(function(){    //展开更多
+		$("div .p-more","#accor").bind("click",function(){
+			var div=$(this).parent();
+			if(div.hasClass("fold")){
+				div.removeClass("fold");
+				$(this).find(".iconfont").removeClass("icon-gengduo1").addClass("icon-shang");
+				div.find(".foldContent").slideDown();
+				$(this).addClass("zk");
+			}else{
+				div.addClass("fold");
+				$(this).find(".iconfont").removeClass("icon-shang").addClass("icon-gengduo1");
+				div.find(".foldContent").slideUp();
+				$(this).removeClass("zk");
+			}
+		});
+	})
+	
+	$(document).ready(function() {  //点击房冒泡
+		$(".Bubble01").bind('click', function(event) {  
+		});  
+		$(".Bubble02").bind('click', function(event) {  
+			event.stopPropagation();  
+		});  
+	}); 
+      var pb1 = $.photoBrowser({
+        items: [
+          "../image/u109.jpg",
+          "../image/The-course.jpg",
+          "../image/s3.jpg",
+        ],
+
+        onSlideChange: function(index) {
+          console.log(this, index);
+        },
+
+        onOpen: function() {
+          console.log("onOpen", this);
+        },
+        onClose: function() {
+          console.log("onClose", this);
+        }
+      });
+      $(".interact-thumb").click(function() {
+        pb1.open();
+      });
+/*$(function(){//固定菜单
+	//设置标杆
+	var _line=parseInt($(window).height()/3);
+	$(window).scroll(function(){
+		//滚动159px，固定定位
+		if ($(window).scrollTop()>115) {
+			$('.cour-ft').css({'position':'fixed','top':43,'border-bottom':'1px solid #e5e5e5',});
+			$('.cour-t39').css({'margin-top':'40px'})
+		}else{
+			$('.cour-ft').css({'position':'','top':'','border-bottom':''});
+			$('.cour-t39').css({'margin-top':''})
+		};
+	});
+});*/
+  $(document).on("click", "#show-actions", function() {
+	$.actions({
+	  title: "选择操作",
+	  onClose: function() {
+		console.log("close");
+	  },
+	  actions: [
+		{
+		  text: "置顶",
+		  className: "color-warning",
+		},
+		{
+		  text: "删除",
+		  className: 'color-danger',
+		  onClick: function() {
+			$.alert("你选择了“删除”");
+		  }
+		}
+	  ]
+	});
+  });
+      $(document).on("click", "#show-common", function() {
+        $.actions({
+          actions: [
+            {
+              text: ' <div class="weui-flex pl10 pr10"><div class="weui-flex__item"><div class="placeholder"><div contenteditable="true" class="textbox t-left pt5 pb5" placeholder=""></div> </div></div><div class="placeholder t-right"><a href="01course-c.html" class="weui-btn weui-btn_mini weui-btn_primary bor-no pt5 pb5">发送</a></div></div>',
+              className: "Bubble01 pb5",
+            }
+          ]
+        });
+      });
+      $(document).on("click", "#show-reply", function() {
+        $.actions({
+          actions: [
+            {
+              text: ' <div class="weui-flex pl10 pr10"><div class="weui-flex__item"><div class="placeholder"><div contenteditable="true" class="textbox t-left pt5 pb5" placeholder="回复XXX："></div> </div></div><div class="placeholder t-right"><a href="01course-c.html" class="weui-btn weui-btn_mini weui-btn_primary bor-no pt5 pb5">发送</a></div></div>',
+              className: "Bubble01 pb5",
+            }
+          ]
+        });
+      });
+
+</script>
+  
+</body>
+</html>

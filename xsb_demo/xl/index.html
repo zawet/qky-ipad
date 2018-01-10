@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>校历</title>
+<link  href="css/commonH5.css" rel="stylesheet" type="text/css"/>
+<link  href="css/qkyui2.1.css" rel="stylesheet" type="text/css"/>
+<link  href="css/qkyuih5_theme.css" rel="stylesheet" type="text/css"/>
+<link  href="css/swiper-3.3.1.min.css" rel="stylesheet" type="text/css"/>
+<link  href="css/xl.css" rel="stylesheet" type="text/css"/>
+<link  href="css/qkySelect.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body class="qkybody">
+
+<!--头部标准，一般固定-->
+<div class="qkyh5_header noshadow ub ub-ac ba_fa heard_">
+<a class="home_but"><i class="qkyicon">&#xe6a7;</i></a>
+<div class="ub-f1 qkyh5_header_main" id="xq"></div>
+</div>
+
+<!--中部标准，一般放列表-->
+<div class="qkyh5_main" >
+	<div class="xl-table-info">
+        <div class="ub ub-ac"><div class="xlt-ti">校历名称：</div><div id="xqcont">2017-2018学年上学期</div></div>
+        <div class="ub ub-ac"><div class="xlt-ti">时间：</div><div id="sedata"></div></div>
+        <div class="ub ub-ac"><div class="xlt-ti">总教学事项：</div><div>4</div></div>
+    </div>
+    <div class="xl-table">
+        <table class="xltable">
+            <thead>
+                <tr>
+                    <th class="show-week">&nbsp;</th><th >日</th><th>一</th><th>二</th><th>三</th><th>四</th><th>五</th><th>六</th>
+                </tr>
+            </thead>
+            <tbody class="xlxr"></tbody>
+        </table>
+    </div>
+</div>
+
+<script src="js/sea.js"></script>
+<script src="js/seaconfig2.0.js"></script>
+<script>
+seajs.use(["jq","run"],function(j,r){
+	r.run();
+});
+</script>
+</body>
+</html>

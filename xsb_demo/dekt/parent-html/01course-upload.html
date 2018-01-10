@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="../image/qky2.ico">
+<title>第二课堂</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+<link rel="stylesheet" href="../css/weui.min.css">
+<link rel="stylesheet" href="../css/jquery-weui.css">
+<!--基础样式覆盖-->
+<link rel="stylesheet" href="../iconfont/common/iconfont.css">
+<link rel="stylesheet" href="../css/circle-h5.css">
+</head>
+<body ontouchstart class="bg_white">
+<div class="header-title weui-flex">
+  <div class="placeholder"><a href="01course-detail_no.html" class="fz_15 co_66 pl15 pr15 iblock mr5">取消</a></div>
+  <div class="weui-flex__item">
+    <div class="weui-flex co_33">
+      <div class="weui-flex__item t-center"><div class="placeholder tit-flex">课后作业</div></div>
+    </div>
+  </div>
+  <div class="placeholder t-right"><a href="01course-detail_done.html" class="weui-btn weui-btn_mini weui-btn_primary mt5 mr5 bor-no">提交</a></div>
+</div>
+<div class="pt44">
+  <div class="pt10 pr15 pb10 pl15 fz_0">
+   <textarea name="" cols="" rows="8" class="col-100 bor-no send-txtare fz_16" placeholder="说点什么......"></textarea>
+   
+  </div>
+  <div class="weui-cells__title pt5 mt0">
+    <div class="weui-flex fz_14">
+      <a href="javascript:;" id='show-picture' class="placeholder pl5 pr5 iblock mr20"><i class="iconfont icon-pic ma5 iblock fz_24"></i></a>
+    </div>
+  </div>
+  
+    
+</div>
+
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/fastclick.js"></script>
+<script src="../js/jquery-weui.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+$('.send-txtare').keyup(function () {
+    $(this).height(this.scrollHeight);
+});
+
+  $(document).on("click", "#show-picture", function() {
+	$.actions({
+	  title: '',
+	  onClose: function() {
+		console.log("close");
+	  },
+	  actions: [
+		{
+		  text: '拍照',
+		  className: "",
+		  autoClose: false,
+		},
+		{
+		  text: '从相册上传',
+		  className: "",
+		  autoClose: false,
+		},
+	  ]
+	});
+  });
+</script>
+  
+</body>
+</html>

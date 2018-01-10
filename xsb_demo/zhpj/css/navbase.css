@@ -1,0 +1,279 @@
+/*
+ * 全课云基础样式 zwt 2016-12-16 创建1.0
+   zwt 2017-01-13 变为分离式 成为1.2
+ */
+
+
+/*
+ * 对bootstrap基础样式覆盖并改装
+ */
+
+/*整体框架基础*/
+body{font-family: Microsoft YaHei,"Hiragino Sans GB W3", Helvetica, Arial, sans-serif;}
+.qkybody{ padding:50px 0; background:#f4f4f4; position:absolute; top:0; left:0; min-height:100%; width:100%;}
+.qkyff_fluid{ background:#fff; width:100%;}
+.navbar-fixed-top {border: 0;}
+.qky_content{width:100%;}
+@media (min-width: 768px){.qky_content{width:100%;}}
+@media (min-width: 992px){.qky_content{width: 970px;}}
+@media (min-width: 1200px){.qky_content{width: 1080px;}}
+.footer{ position: absolute; bottom:0; padding:15px 0; text-align:center; left:0; width:100%; background:#fff; color:#a5a5a5;z-index: 1001; display:none;}
+.footer.open{ display:block;}
+.footer.inverse{ background:#515151;}
+.footer.default{ background:#fff; }
+
+
+/*主色调定义*/
+.mian_background{ background:#2baf2b}/*主色调*/
+.assist_background{ background:#72D572}/*辅色调*/
+.minor_background{ background:#A3E9A4}/*次色调*/
+.mian_color{ color:#2baf2b; cursor:pointer;}/*字主色调*/
+.assist_color{ color:#72D572}/*字辅色调*/
+.minor_color{ color:#A3E9A4}/*字次色调*/
+.mian_line{ border:1px solid #2baf2b}/*边框次色调*/
+.ff_background{ background:#fff;}
+.nav_color{color:#0A7E07;}
+.nav_qkymc a{ color:#2baf2b;} 
+.box_ff{ border:1px solid #d8d8d8; background:#fff;}
+
+.remind_tips{ color:#999 !important;}/*注意提示颜色*/
+.error_tips{ color:#F0485F !important; }/*错误提示颜色*/
+ul.error_tips{ padding:0; margin:0;list-style:none;}/*错误信息列表*/
+ul.error_tips li{ padding:4px 0 ; margin:0;}
+
+.cadr_hbg{ background:#f4f4f4;}
+
+.a_tdn{text-decoration:none;}
+.a_tdn:hover{ text-decoration:none;}
+
+/*****主导航条改装*****/
+.nav_box{ width:100%;}
+.navbtn{ height:50px; padding:0 15px; line-height:50px; cursor:pointer; text-decoration:inherit; color:#a5a5a5;}
+.nav_logo{ float:left; height:50px; width:80px;}
+.nav_logo img{ width:60px; margin:10px auto; display:block; height:30px;}
+.navline{width :1px;height:34px;  float:left; margin-top:8px;}
+.nav_pjname{ float:left; line-height:20px; padding:15px 0; font-size:16px;font-weight:600; margin:0 0 0 20px;}
+.nav_other{ list-style:none; margin-bottom:0;display:none;}
+.nav_other > li{ float:left;line-height:50px; padding:0 15px; height:50px;}
+.nav_other > li.dropdown a{ min-width:100px;}
+.nav_other > li > a{color:#a5a5a5; text-decoration:none;}
+.nav_other > li > a:hover{ color:#fff;}
+.nav_other li .other_sel {  display:block; width:100%;}
+.nav_other li .other_sel .user_photo{ width:28px; height:28px; line-height:28px; margin:11px 0; text-align:center;border-radius:50%;}
+.nav_other li .other_sel .user_photo.dist{ background:#a5a5a5;}
+.nav_other li .other_sel .user_photo i{ color:#515151; font-size:20px;}
+.nav_other li .other_sel .user_photo img{ width:100%; height:100%;border-radius:50%;}
+.nav_other li .other_sel:hover .user_photo.dist{ background:#fff;}
+.nav_other li .other_sel:hover .user_photo i{ color:#515151;}
+.nav_other li .other_sel .other_name{ margin:0 5px;}
+.nav_other li .dropdown-menu{ right:0; left:auto; margin-top:0; min-width:auto; width:105px; border-radius:0 0 6px 6px;border:none; box-shadow:none;}
+.nav_other li .dropdown-menu li{ width:100%; box-sizing:border-box;}
+.nav_more{ position:absolute; left:0; top:100%; z-index:666;height:340px; overflow-y:scroll; width:100%; display:none; padding:0; margin:0;border-top: 1px solid transparent; border-radius: 0 0 6px 6px;}
+.nav_more_left{ height:100%; position:relative; overflow:hidden; padding:0;}
+.scroll_box{ height:100%; width:105%; overflow-y:scroll; padding:20px 5% 20px 20px}
+.nav_more_lli{ width:100%; padding:20px 20px 15px; box-sizing:border-box; margin:0;}
+.nav_more_lli:hover{ border-radius:5px;}
+.nav_more_lli .li_a a{ margin-right:15px; float:left; margin-bottom:10px; cursor:pointer;}
+.nav_more_left .navline{ position:absolute; right:0; top:0; height:100%; margin:0;}
+.nav_more_right{ height:100%;overflow:hidden; padding:0;}
+.nav_more_right .scroll_box{ width:106%; padding-right:6%;}
+
+@media (min-width: 768px) {
+.nav_other{ float:right; display:block;}
+.nav_box{ width:auto;}
+.nav_more{ width:48%;}
+.nav_more{ overflow:hidden;}
+.nav_pjname{  margin:0 40px 0 20px;}
+}
+
+/*主导航颜色*/
+/*深色款*/
+.navbar-inverse {background:#515151;}
+.navbar-inverse .navbtn:hover{ background:#6c6c6c;color:#a5a5a5;}
+.navbar-inverse .navline{background-image:linear-gradient(-180deg, #515151 0%, #ababab 51%, #515151 100%);}
+.navbar-inverse .nav_pjname{ color:#fff; }
+.navbar-inverse .navbar-nav > li > a {color:#a5a5a5;}
+.navbar-inverse .navbar-nav > li > a:hover{ background:#6c6c6c; color:#d8d8d8;}
+.navbar-inverse .navbar-nav > .active > a { background:#0288d1}
+.navbar-inverse .navbar-nav > .active > a:hover { background: #2baf2b}
+.navbar-inverse .nav_other li .dropdown-menu{ background:#515151;}
+.navbar-inverse .nav_other li .dropdown-menu li a{ color:#a5a5a5;}
+.navbar-inverse .nav_other li .dropdown-menu li a:hover{ color:#d8d8d8; background:#6c6c6c;}
+.navbar-inverse .nav_more{background:#515151;-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);border-color: #101010; }
+.navbar-inverse .nav_more_lli:hover{ background:#6c6c6c;}
+.navbar-inverse .nav_more .nav_more_lli h5{ color:#fff;}
+.navbar-inverse .nav_more .nav_more_lli a{ color:#a5a5a5;text-decoration:inherit;}
+.navbar-inverse .nav_more .nav_more_lli a:hover{ color:#fff;}
+
+/*下拉组改装*/
+.qkydropdown .btn{ width:100%; text-align:left; position:relative; height:34px; padding:6px 15px; }
+.qkydropdown .btn .caret{ position:absolute; right:8px; top:15px;}
+.qkydropdown .dropdown-menu{ width:100%;}
+.maxh{ max-height:200px; overflow-y:auto;}
+
+
+/*按钮改装*/
+.btn.qkybtn{ padding:4px 15px; min-width:80px; height:30px; border-radius:3px; }
+.auto{ min-width:auto;}
+
+
+/*单选改装*/
+.radio label{ line-height:30px; height:30px;}
+.radio_a{ display:block; width:14px; height:14px; border:1px solid #ddd; border-radius:50%; background:#ffffff; margin-top:9px; }
+.radio_a b{ width:6px; height:6px; display:block; margin:3px;border-radius:50%;}
+.select .radio_a{background:#2baf2b; border:1px solid #2baf2b;}
+.select .radio_a b{background:#fff;}
+
+.disabled .radio_a{background:#ffffff; border:1px solid #dadada;}
+.disabled.select .radio_a{background:#2baf2b; border:1px solid #2baf2b; opacity:0.4;}
+.disabled.select .radio_a b{background:#fff;}
+
+.error .radio_a{background:#ffffff; border:1px solid #f0485f;}
+.error.select .radio_a{background:#f0485f; border:1px solid #f0485f;}
+.error.select .radio_a b{background:#fff;}
+
+
+/*复选改装*/
+.checkbox label{line-height:30px; height:30px;}
+a.checkbox_a{display:block; width:16px; height:16px; border:1px solid #dadada; border-radius:4px;background:#ffffff; line-height:15px; text-align:center; text-decoration: inherit; margin:6px 5px 0 0;}
+.checkbox_a i{ color:#fff;}
+.select a.checkbox_a{background:#2baf2b; border:1px solid #2baf2b;}
+.disabled a.checkbox_a{background:#ffffff; border:1px solid #dadada;}
+.disabled.select a.checkbox_a{background:#2baf2b; border:1px solid #2baf2b; opacity:0.4;}
+.error a.checkbox_a{background:#ffffff; border:1px solid #f0485f;}
+.error.select a.checkbox_a{background:#f0485f; border:1px solid #f0485f;}
+
+
+/********表格组改装***********/
+
+
+/*按钮表格组改装*/
+.td_mc{ text-align:center; vertical-align:middle !important;}
+.table_btn{ color:#333; text-decoration:inherit; cursor:pointer;}
+.table_btn:hover{ color:#999;text-decoration:inherit;}
+.ns{ overflow: inherit;}/*表格外框不出现滚动条*/
+.table_card a{ color:#737373; cursor:pointer; text-decoration:inherit;}
+.table_card a:hover{ color:#333;}
+
+.qkytable.border{border:1px solid #eee;}
+.qkytable_btn{ padding:10px;}
+.qkytable_btn .btn{ min-width:auto;}
+.qkytable_btn .input_box{ width:30%; float:right;}
+.qkytable .table { margin-bottom:0;}
+.qkytable .table >thead >tr >th{ padding:10px; background:#fbfbfb; font-weight:normal; color:#808080; border-bottom:none;}
+.qkytable .table >tbody >tr >td{ padding:10px; border-top:none; color:#333;}
+.qkytable .table >tbody >tr{background:#fbfbfb;}
+.qkytable .table-striped > tbody > tr:nth-child(odd) {background-color: #ffffff;}
+.qkytable .table.table-bordered  >tbody >tr >td{ border-top:1px solid #ddd;}
+.qkytable .table.td_h30  >tbody >tr >td{ padding:20px 10px;}
+.qkytable .table >tbody >tr.today >td.txt{ background:#72D572; color:#fff; border-color:#2baf2b;}
+
+.noinp_bor .form-control{ border:none; box-shadow:none; background: none;}
+.table > tbody.noinp_bor > tr > td{ line-height:34px;}
+
+
+/*路径表格改装*/
+.table_lj{ border:1px solid #ddd; padding:0 15px; background:#fff;}
+.table_lj .table{ margin-bottom:0;}
+.table_ljchoose{ padding:0 15px;}
+.table_ljchoose >tbody >tr>td{ border-bottom:1px solid #eee; padding:10px 0; background:#fff; border-top:0;}
+.table_ljchoose >tbody >tr>td.tit{ width:12%; padding-left:2%;}
+.table_ljchoose >tbody >tr>td.tit label{padding:8px 0;}
+.table_ljchoose >tbody >tr>td.cont_a a{ display:inline-block; padding:8px 15px; margin-right:10px; color:#333; text-decoration:inherit; cursor:pointer;}
+.table_ljchoose >tbody >tr>td.cont_a a:hover,
+.table_ljchoose >tbody >tr>td.cont_a a.active{ background:#f5f5f5; font-weight:bold; border-radius:4px;}
+.table_ljchoose >tbody >tr.lj_bottom>td{ border-bottom:0;}
+
+/*信息显示表格改装*/
+.table_info{ border:1px solid #ddd; background:#fff; padding:0 5px;}
+.table_info .table>thead>tr>th{ background:#fbfbfb; border-bottom:0; padding:15px 0 15px 20px; font-size:20px; color:#737373;}
+.table_info .table>thead>tr.info_tit>th{ font-size:16px; font-weight:normal; color:#333;}
+.table_info .table>tbody>tr>td{ padding:15px 0 15px 20px; font-size:16px; background:#fff; border-top:1px solid #ddd;}
+.table_info .table>tbody.info_txt>tr>td{ font-size:14px;}
+.table_info .table>tbody.info_edit>tr>td.td_tit{ line-height:30px;}
+.table_info .table>tbody>tr>td.td_inp{ padding-left:10px; padding-right:4%;}
+.table_info .table>tbody>tr>td.td_tit{ width:13%;}
+.table_info .table>tbody>tr>td.td_tit.long{ width:18%;} 
+.table_info .table>tbody>tr>td.td_tit.xlong{ width:22%;} 
+.table_info .table>tbody>tr.top>td{ border-top:0;}
+.table_info .table>tbody>tr>td>img{ display:block; margin:0 auto;}
+.add_{ cursor:pointer;}
+
+
+/*禁区父类*/
+.no_open{ opacity:0.6; background:#f1f1f1;} 
+.no_open a.checkbox_a{background:#ffffff; border:1px solid #dadada;}
+.no_open .select a.checkbox_a{background:#2baf2b; border:1px solid #2baf2b; opacity:0.4;}
+
+/*默认没数据模块*/
+.dist_box{ width:100%; text-align:center; padding:10% 0;}
+.dist_txt{ color:#333; font-size:16px; padding:0 0 15px;}
+
+/*没数据模块*/
+.nodata{ width:100%; border:1px solid #d8d8d8; background:#fff; text-align:center; padding:10% 0;}
+.nodata>h3{ color:#f0485f; margin-top:0;}
+.nadata_img{ padding:15px 0;}
+.nadata_txt{ font-size:16px; padding:10px 0 10px; color:#868686; display:inline-block;}
+
+
+/*标签改装*/
+.tooltip.top,.tooltip.bottom,.tooltip.left,.tooltip.right{ opacity:1;}
+.tooltip.top .tooltip-arrow{border-top-color: #f1f1f1;}
+.tooltip.bottom .tooltip-arrow{border-bottom-color: #f1f1f1;}
+.tooltip.left .tooltip-arrow{border-left-color: #f1f1f1;}
+.tooltip.right .tooltip-arrow {border-right-color: #f1f1f1;}
+.tooltip-inner { color: #666;background-color: #f1f1f1;}
+
+
+/*模态窗口改装*/
+.modal-body{ padding:20px;}
+@media (min-width: 768px) {
+  .modal-dialog .modal-body{min-height:234px;}
+  .modal-sm {width:480px;}
+  .modal-xs {width:300px;}
+  .modal-sm .modal-body{min-height:164px;}
+}
+@media (min-width: 992px) {
+  .modal-lg .modal-body{min-height:404px;}
+}
+.modal-footer{ text-align:center; border-top:none;}
+.modal_auto{ min-height:auto !important;}
+
+/*翻页改装*/
+.qkypage{ text-align:center; position:relative;}
+.qkypage .pageinfo{ height:30px; line-height:30px; text-align:left;color:#a5a5a5;  display:none;}
+.qkypage .page_prv,.qkypage .page_next,.qkypage .page_input{ display:none;}
+.qkypage li a{ padding:5px 10px; color:#737373;}
+.qkypage li.disabled a{ color:#a5a5a5;}
+.qkypage li.active  a{ background:#2baf2b;}
+.qkypage li > a:hover{ background:none; color:#72D572;}
+.qkypage .form-control{ height:30px; padding:4px 10px; width:100px;}
+.qkypage .btn{ width:30px; min-width:auto; padding:4px 0; text-align:center; box-sizing:border-box; color:#535353;}
+.qkypage .btn:hover{ background:#2baf2b; color:#fff; border-color:#2baf2b;}
+@media (min-width: 768px) {.qkypage .pageinfo,.qkypage .page_prv,.qkypage .page_next,.qkypage .page_input{ display:block}}
+
+
+/*日历插件改装*/
+.flatpickr-day.selected,.flatpickr-day.selected:hover{ background:#2baf2b; border-color:#2baf2b;}
+.flatpickr-day.today {border-color:#A3E9A4;}
+.flatpickr-day.today:hover{ background:#A3E9A4; color:#fff;border-color:#A3E9A4;}
+
+/***************************其他版本css，可删除******start/
+
+
+/*数据视图模块*/
+.data_view{ background:#fff; margin:0 0 20px; border:1px solid #d8d8d8; padding:20px 20px 0;}
+.data_view_li{ margin-bottom:20px; padding:0;}
+.data_view_tit{ text-align:center; color:#8e8e8e; line-height:34px;}
+.data_view_limain{ height:300px;}
+
+.pr0 {
+    padding-right: 0px!important;
+}
+.clear:before, .clear:after {
+    content: " ";
+    display: table;
+}
+.clear:after {
+    clear: both;
+}
