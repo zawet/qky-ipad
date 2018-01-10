@@ -7,14 +7,17 @@ define(function(require,exports) {//dedine闭包
 	var tm=myDate.getMinutes();     //获取当前分钟数(0-59)
 	var ts=myDate.getSeconds();     //获取当前秒数(0-59)
 	var dayNames = new Array("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
+
 	exports.ipad=function(d){
+		//初始化页面
 		var times=setInterval(function(){
 			$("#time").html(th+":"+tm);
 			tm++;if(tm>=60){tm=0; th++;if(th>=24)th=0;}
 		},60000);
-
 		$("#date").html(dayNames[myDate.getDay()]+"  "+toy+"-"+(tom+1)+"-"+tod);
-		drawDom(d);
+		drawDom(d);//渲染dom流
+
+		//滑动机制
 		var des=new Swiper(".ipad-des",{
 			//initialSlide :1,
 			onSlideChangeEnd: function(swiper){
@@ -22,19 +25,35 @@ define(function(require,exports) {//dedine闭包
 				isOne(swiper.activeIndex);
 			}
 		});
+
+		//底部导航点击事件
 		$(".qkyh5_footbg a").click(function(){
 			des.slideTo($(this).index(),500);
 			$(this).addClass("cur").siblings().removeClass("cur");
 			isOne($(this).index());
 		});
 
+        //进来跳转到哪页
 		var st=exports.getUrl("st");
 		if(exports.isNull(st)=="kong")st=1;
 		des.slideTo(st);
 
+		//返回核心素养
 		$("#toindex").click(function(){
 			des.slideTo(1);
-		})
+		});
+		//tab页面转换
+		$(".tab-but a").click(function(){
+			$(this).addClass("active").siblings().removeClass("active");
+			var showid= $(this).attr("toshow");
+			$(".stu-right").removeClass("open");
+			$("."+showid).addClass("open");
+		});
+
+		window.onbeforeunload=function(){
+			console.log("zwt");
+			
+		}
 	}
 
 function drawDom(d){

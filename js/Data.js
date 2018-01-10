@@ -10,17 +10,18 @@ define({ //dedine闭包
     ],
     indexRight:[
         {appid:"gw",appname:"学校官网",href:"#",appicon:"gw.png",appclass:"w100"},
-        {appid:"zy",appname:"作业",href:"#",appicon:"zy.png",appclass:"w50"},
+        //{appid:"zy",appname:"作业",href:"#",appicon:"zy.png",appclass:"w50"},
+        {appid:"xk",appname:"选课",href:"xsb_demo/zxxk/1.1.xkjh(project_list)_M1109.html",appicon:"xk.png",appclass:"w50"},
         {appid:"dekt",appname:"第二课堂",href:"xsb_demo/dekt/parent-html/01course-c.html",appicon:"dekt.png",appclass:"w50"}
     ],
     school:[
         {appid:"kq",appname:"考勤",href:"xsb_demo/xskq/index_stu.html",appicon:"kq.png",appclass:""},
-        {appid:"xk",appname:"选课",href:"xsb_demo/zxxk/1.1.xkjh(project_list)_M1109.html",appicon:"xk.png",appclass:""},
-        {appid:"ss",appname:"宿舍",href:"xsb_demo/ssgl/index.html",appicon:"ss.png",appclass:""},
-        {appid:"ziy",appname:"资源",href:"#",appicon:"ziy.png",appclass:""},
-        {appid:"ks",appname:"考试",href:"xsb_demo/kwgl/index_ksap(student).html",appicon:"ks.png",appclass:""},
+        //{appid:"xk",appname:"选课",href:"xsb_demo/zxxk/1.1.xkjh(project_list)_M1109.html",appicon:"xk.png",appclass:""},
         {appid:"kb",appname:"课表",href:"xsb_demo/zxkb/pk_sys2_stu.html",appicon:"kb.png",appclass:""},
         {appid:"xl",appname:"校历",href:"xsb_demo/xl/index.html",appicon:"xl.png",appclass:""},
+        {appid:"ss",appname:"宿舍",href:"xsb_demo/ssgl/index.html",appicon:"ss.png",appclass:""},
+        //{appid:"ziy",appname:"资源",href:"#",appicon:"ziy.png",appclass:""},
+        {appid:"ks",appname:"考试",href:"xsb_demo/kwgl/index_ksap(student).html",appicon:"ks.png",appclass:""},
         {appid:"kcpj",appname:"课程评价",href:"#",appicon:"kcpj.png",appclass:""},
         {appid:"wj",appname:"问卷",href:"#",appicon:"wj.png",appclass:""},
         {appid:"jc",appname:"订餐",href:"xsb_demo/jcgl/index.html",appicon:"jc.png",appclass:""}
@@ -29,6 +30,6 @@ define({ //dedine闭包
         {appid:"jysd",appname:"教育商店",href:"EDstore/",appicon:"app.png",appclass:""},
         {appid:"yzt",appname:"语智通",href:"#",appicon:"yzt.png",appclass:""},
         {appid:"efd",appname:"E辅导",href:"#",appicon:"efd.png",appclass:""},
-        {appid:"czbs",appname:"成长帮手",href:"#",appicon:"czbs.png",appclass:""}
+        {appid:"czbs",appname:"成长帮手",href:"http://czbspc.qk100.com/web",appicon:"czbs.png",appclass:""}
     ] 
 });

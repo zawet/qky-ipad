@@ -25,13 +25,17 @@
 .tab-but a:nth-child(2){border-radius:0 12px 12px 0;}
 .tab-but a.active{background: #e8faff; color: #398194;}
 
-.stu-right{ width: 63%; height: 100%; overflow: scroll; position: absolute; left: 32%; top: 80px; z-index: 55; padding-bottom: 80px; box-sizing: border-box;}
+.stu-right{ width: 63%; height: 100%; overflow: scroll; position: absolute; left: 32%; top: 80px; z-index: 55; padding-bottom: 80px; box-sizing: border-box; opacity: 0;}
+.stu-right.open{ opacity: 1; z-index: 66;}
 .dt-title{ background: rgba(255,255,255,0.95); padding: 10px 40px; border-radius: 16px 16px 0 0;}
 .dt-title  img{ height: 26px;}
 .dt-title span{ font-size: 18px; color: #398194; margin-left: 10px; line-height: 26px; display: block;}
 .dt-info{ padding: 10px 40px 0;}
 .dt-info li{ color: #3b3b3b;font-size: 18px; line-height: 30px;}
 .dt-info li a{ display: block; color:  #279cbd; padding: 5px 0; text-align: center; border-top: 1px solid #5ec1db; margin-top: 10px; font-size: 16px;}
+
+.dt-table{border-spacing: 0;border-collapse: collapse; border:1px  solid #535353; width: 100%; }
+.dt-table th,.dt-table td{ border-left: 1px solid #535353; border-bottom: 1px solid #535353; padding: 10px 0; text-align: center; color: #3b3b3b; font-size: 16px; font-weight: 600;}
 
 .stu-tx{ width: 150px; height: 150px; border-radius: 50%; margin: 0 auto;  overflow: hidden; position: relative;}
 .stu-tx img{ width: 100%; border-radius: 50%;}
