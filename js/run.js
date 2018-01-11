@@ -49,11 +49,6 @@ define(function(require,exports) {//dedine闭包
 			$(".stu-right").removeClass("open");
 			$("."+showid).addClass("open");
 		});
-
-		window.onbeforeunload=function(){
-			console.log("zwt");
-			
-		}
 	}
 
 function drawDom(d){
