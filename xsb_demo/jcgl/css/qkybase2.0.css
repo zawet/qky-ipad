@@ -90,8 +90,8 @@ ul.error_tips li{ padding:4px 0 ; margin:0;}
 .headernav{ height:50px;}
 .nav_box{ width:100%;}
 .navbtn{ display:block;height:49px; padding:0 20px; margin-right:3px; margin-left:-15px;line-height:50px; cursor:pointer; text-decoration:inherit; color:#a5a5a5; border:1px solid #fff; border-bottom:0; border-top:0;}
-.nav_logo{ float:left; height:50px; width:80px;}
-.nav_logo img{ width:50px; margin:12px auto; display:block; height:25px;}
+.nav_logo{ float:left; height:50px;}
+.nav_logo img{ margin:10px 15px; display:block; height:30px;}
 .navline{width :1px;height:34px;  float:left; margin-top:8px;}
 .nav_pjname{ float:left; line-height:20px; padding:15px 0; font-size:16px;font-weight: bold; margin:0 0 0 20px;}
 .navbar-nav > li > a { height:49px;}

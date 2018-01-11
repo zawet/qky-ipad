@@ -8,7 +8,8 @@ define({
 	navmoreli_e:'</div></div></div>',
 	navhtml:'<div class="container-fluid po_r">'+
         '<div class="nav_box clear fl">'+
-          '<a class="navbtn fl"><i class="qkyicon_12 fz_18">&#xe612;</i></a>'+	
+          '<a class="navbtn fl" href="../../../index.html?st=1"><i class="qkyicon fz_26">&#xe6a7;</i></a>'+	
+          '<div class="navline" style="margin-right:0"></div>'+
           '<div class="nav_logo">'+
 		  '<img src="" alt="" >'+
 		  '</div>'+

@@ -26,7 +26,7 @@
 		],//主导航条
 		
 		
-		morebtn:false,//是否显示最左汉堡包菜单建已经是否执行更多操作
+		morebtn:true,//是否显示最左汉堡包菜单建已经是否执行更多操作
 		common:[//常用app
 			["电子图书馆","href='#'"],["校友家园","href='#'"],
 			["考勤管理","href='#'"],["党工团管理","href='#'"],
@@ -234,14 +234,14 @@
 						  $(".qkyhead_more").on("click",function(event){
 							 event.stopPropagation();
 						  });
-						$(".qkyhead_menuicon").on("click",function(event){
-							event.stopPropagation();
-							var wh=$(window).height()-50;
-							$(".qkyhead_more").toggleClass("open").css("height",wh+"px");
-							$(this).toggleClass("active");
-							 $(".qkyhead_news .qkyhead_news_popup").slideUp(50);
-							 $(".qkyhead_select_menu").slideUp(100); 
-						});
+						// $(".qkyhead_menuicon").on("click",function(event){
+						// 	event.stopPropagation();
+						// 	var wh=$(window).height()-50;
+						// 	$(".qkyhead_more").toggleClass("open").css("height",wh+"px");
+						// 	$(this).toggleClass("active");
+						// 	 $(".qkyhead_news .qkyhead_news_popup").slideUp(50);
+						// 	 $(".qkyhead_select_menu").slideUp(100); 
+						// });
 						
 						tofor($("#common"),opts.common,"a");//渲染常用app
 						tofor($("#lately"),opts.lately,"a");//渲染最近app

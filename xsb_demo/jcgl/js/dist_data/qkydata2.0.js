@@ -6,7 +6,7 @@
 define({
 	navdata:{/*导航数据*/
 	    htmlsrc:"mould_html/qkynav2.0.html",//头部模板获取异步地址
-		logosrc:"images/nav_logo/qky-logo.png",//logo来源路径
+		logosrc:"images/nav_logo/logo.png",//logo来源路径
 		pjname:"初始页面2.0版本",//应用名
 		theme:"navbar-default",//主题
 		themetype:{

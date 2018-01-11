@@ -18,12 +18,12 @@ define({ //dedine闭包
         {appid:"kq",appname:"考勤",href:"xsb_demo/xskq/index_stu.html",appicon:"kq.png",appclass:""},
         //{appid:"xk",appname:"选课",href:"xsb_demo/zxxk/1.1.xkjh(project_list)_M1109.html",appicon:"xk.png",appclass:""},
         {appid:"kb",appname:"课表",href:"xsb_demo/zxkb/pk_sys2_stu.html",appicon:"kb.png",appclass:""},
-        {appid:"xl",appname:"校历",href:"xsb_demo/xl/index.html",appicon:"xl.png",appclass:""},
+        //{appid:"xl",appname:"校历",href:"xsb_demo/xl/index.html",appicon:"xl.png",appclass:""},
         {appid:"ss",appname:"宿舍",href:"xsb_demo/ssgl/index.html",appicon:"ss.png",appclass:""},
         //{appid:"ziy",appname:"资源",href:"#",appicon:"ziy.png",appclass:""},
         {appid:"ks",appname:"考试",href:"xsb_demo/kwgl/index_ksap(student).html",appicon:"ks.png",appclass:""},
-        {appid:"kcpj",appname:"课程评价",href:"#",appicon:"kcpj.png",appclass:""},
-        {appid:"wj",appname:"问卷",href:"#",appicon:"wj.png",appclass:""},
+        //{appid:"kcpj",appname:"课程评价",href:"#",appicon:"kcpj.png",appclass:""},
+        {appid:"wj",appname:"问卷",href:"xsb_demo/dcwj/index_myqlist.html",appicon:"wj.png",appclass:""},
         {appid:"jc",appname:"订餐",href:"xsb_demo/jcgl/index.html",appicon:"jc.png",appclass:""}
     ],
     other:[

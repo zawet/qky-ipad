@@ -37,8 +37,8 @@ define(function(require) {
 					}
 					$("#moreli_box").append(qkyhtml.navmoreli_s+"<use xlink:href='#icon-"+opts.moreli[key][0]+"'></use>"+qkyhtml.navmoreli_m+key+qkyhtml.navmoreli_m2+liahtml+qkyhtml.navmoreli_e);
 				}
-				if(opts.morebtn)$(".navbtn").on("click",function(){$(".nav_more").slideToggle(300);});
-				else $(".navbtn").hide();
+				//if(opts.morebtn)$(".navbtn").on("click",function(){$(".nav_more").slideToggle(300);});
+				//else $(".navbtn").hide();
 		    })
 		}
 	});

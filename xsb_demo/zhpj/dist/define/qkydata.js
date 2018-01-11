@@ -14,7 +14,7 @@ define({
 			"校园支付":["xiaoyuanzhifu",[["个人办公","href='#'"],["行政办公","href='#'"],["流程审批","href='#'"]]],
 			"智慧教学":["zhihuijiaoxue",[["个人办公","href='#'"],["行政办公","href='#'"],["流程审批","href='#'"]]]
 		},
-		"morebtn":false,
+		"morebtn":true,
 		"common":[["个人办公","href='#'"],["行政办公","href='#'"],["流程审批","href='#'"]],
 		"lately":[["个人办公","href='#'"],["行政办公","href='#'"],["流程审批","href='#'"]],
 		"isinfo":true,//是否支持登录显示个人信息

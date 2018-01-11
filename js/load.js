@@ -9,6 +9,12 @@ function setupManifest() {
     onemf= [
         {id: "logo",src: "images/logo.png"},
         {id: "allbg",src: "images/allbg.png"},
+        {id: "tx",src: "images/tx.png"},
+        {id: "dticon0",src: "images/dticon1.png"},
+        {id: "dticon1",src: "images/dticon1.png"},
+        {id: "dticon2",src: "images/dticon2.png"},
+        {id: "dticon3",src: "images/dticon3.png"},
+        {id: "dticon4",src: "images/dticon4.png"},
 
         {id: "indexicon",src: "images/footicon/indexicon.png"},
         {id: "indexiconOn",src: "images/footicon/indexiconOn.png"},

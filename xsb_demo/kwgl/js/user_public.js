@@ -11,7 +11,7 @@ function footinbottom(header,content,foot){
 	}else{
 		$(foot).css("margin-top","16px");
 	}
-	$(content).css({"margin-top":$(header).outerHeight()+"px"});
+	$(content).css({"margin-top":"50px"});
 }	
 
 // 弹窗

@@ -50,10 +50,10 @@ seajs.config({
 var opt={
 	pjname:"就餐管理",//应用名
 	navli_j:[
-			{name:"我要订餐",attrcont:"href='index.html'",isactive:true},
-			{name:"套餐管理",attrcont:"href='index_tcgl.html'",isactive:false},
-			{name:"订餐统计",attrcont:"href='index_tj.html'",isactive:false},
-			{name:"餐费管理",attrcont:"href='index_cfgl.html'",isactive:false},
+			// {name:"我要订餐",attrcont:"href='index.html'",isactive:true},
+			// {name:"套餐管理",attrcont:"href='index_tcgl.html'",isactive:false},
+			// {name:"订餐统计",attrcont:"href='index_tj.html'",isactive:false},
+			// {name:"餐费管理",attrcont:"href='index_cfgl.html'",isactive:false},
 	]
 }
 

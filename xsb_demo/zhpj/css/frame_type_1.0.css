@@ -50,6 +50,7 @@ input[type="text"], select{ height:30px;}
 .fz_3,.fz_18{ font-size:18px !important;}
 .fz_4{ font-size:20px !important;}
 .fz_5{ font-size:22px !important;}
+.fz_26{ font-size:22px !important;}
 .fz_max{ font-size:36px;}
 
 /*内边距*/
@@ -186,9 +187,9 @@ ul.error_tips li{ padding:4px 0 ; margin:0;}
 
 /*****主导航条改装*****/
 .nav_box{ width:100%;}
-.navbtn{ height:50px; padding:0 15px; line-height:50px; cursor:pointer; text-decoration:inherit; color:#a5a5a5;}
-.nav_logo{ float:left; height:50px; width:80px;}
-.nav_logo img{ margin:10px auto; display:block; height:25px;}
+.navbtn{ height:50px; padding:0 15px; margin-left: -15px; line-height:50px; cursor:pointer; text-decoration:inherit; color:#a5a5a5;}
+.nav_logo{ float:left; height:50px; }
+.nav_logo img{ margin:10px  15px; display:block; height:30px;}
 .navline{width :1px;height:34px;  float:left; margin-top:8px;}
 .nav_pjname{ float:left; line-height:20px; padding:15px 0; font-size:16px;font-weight:600; margin:0 0 0 20px;}
 .nav_other{ list-style:none; margin-bottom:0;display:none;}

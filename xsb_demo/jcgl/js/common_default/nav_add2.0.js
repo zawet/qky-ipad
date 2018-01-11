@@ -122,12 +122,12 @@ define(function(require) {
 						  $(".nav_more").on("click",function(event){
 							 event.stopPropagation();
 						  });
-						$(".navbtn").on("click",function(event){
-							event.stopPropagation();
-							$(".nav_more").slideToggle(50);
-							$(this).toggleClass("active");
-							 $(".nav_news_box .nav_news_popup").slideUp(50);
-						});
+						// $(".navbtn").on("click",function(event){
+						// 	event.stopPropagation();
+						// 	$(".nav_more").slideToggle(50);
+						// 	$(this).toggleClass("active");
+						// 	 $(".nav_news_box .nav_news_popup").slideUp(50);
+						// });
 						
 						tofor($("#common"),opts.common,"a");//渲染常用app
 						tofor($("#lately"),opts.lately,"a");//渲染最近app
