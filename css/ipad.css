@@ -70,7 +70,6 @@
 
 .qkyh5_footbg{ width:100%; left:0; height: auto; bottom: 0; background:url("../images/footbg.png"); border: none; padding:15px 0; box-sizing: border-box; }
 .footbox{ width: 50%; margin: 0 auto;}
-
 .qkyh5_footbg a{ border-color: transparent; text-align: center; display: block; color: #fff; font-size: 16px; width: 25%; position: relative;}
 .qkyh5_footbg a .footicon{width:60px; height: 60px; margin: 0 auto;  position: relative;}
 .qkyh5_footbg a .footicon label{ position: absolute; left: 0; height: 0; width: 100%; height: 100%; top: 0; z-index: 33; opacity: 1;}

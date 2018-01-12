@@ -1,11 +1,15 @@
 define(function(require,exports) {//dedine闭包  
-   
+	$(".qkyh5_footbg a").click(function(){
+		$(this).addClass("cur").siblings().removeClass("cur");
+		
+	});
 	exports.index=function(){
 	
-		$(".qkyh5_footbg a").click(function(){
-			$(this).addClass("cur").siblings().removeClass("cur");
-			
-		});
+		
+	}
+	exports.app=function(){
+	
+	
 	}
 
 

@@ -6,7 +6,7 @@ seajs.config({
 	'jq':'jquery-1.9.1.min.js',
   'run':'run.js',
   'load':"load.js",
-  'mouldData':'data.js',
+  'mouldData':'Data.js',
   'sw':'swiper/3.4.1/js/swiper.min.js'  
   },
 

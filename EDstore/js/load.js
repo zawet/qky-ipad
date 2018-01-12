@@ -6,9 +6,24 @@ exports.preload="";
 function setupManifest() {
     var distsrc="images/icon/";
     onemf= [
-        {id: "list1",src: "images/list1.png"},
-        {id: "list2",src: "images/list1.png"},
-        {id: "list3",src: "images/list3.jpg"}
+        {id: "list01",src: "images/list01.png"},
+        {id: "list02",src: "images/list02.png"},
+        {id: "list03",src: "images/list01.png"},
+        {id: "applist01",src: "images/list01.png"},
+        {id: "applist02",src: "images/list02.png"},
+        {id: "applist03",src: "images/list01.png"},
+        {id: "applist04",src: "images/list01.png"},
+
+        {id: "new",src: "images/footicon/new.png"},
+        {id: "new_b",src: "images/footicon/new_b.png"},
+        {id: "newtit",src: "images/footicon/new_b.png"},
+        {id: "mine",src: "images/footicon/mine.png"},
+        {id: "mine_b",src: "images/footicon/mine_b.png"},
+        {id: "minetit",src: "images/footicon/mine_b.png"},
+        {id: "apps",src: "images/footicon/apps.png"},
+        {id: "apps_b",src: "images/footicon/apps_b.png"},
+        {id: "apptit",src: "images/footicon/shop.png"}
+        //{id: "list3",src: "images/list3.jpg"}
 
     ];
     
@@ -62,7 +77,7 @@ function handleFileProgress(event) {
     //$(".loadprogress").fadeOut(200);
     document.getElementById("loadprogress").style.display="none";
     var imgids=exports.preload._loadItemsById;
-    
+    setImg(imgids);
     //console.log(event,preload);
 }
 

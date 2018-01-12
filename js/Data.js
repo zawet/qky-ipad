@@ -24,7 +24,8 @@ define({ //dedine闭包
         {appid:"ks",appname:"考试",href:"xsb_demo/kwgl/index_ksap(student).html",appicon:"ks.png",appclass:""},
         //{appid:"kcpj",appname:"课程评价",href:"#",appicon:"kcpj.png",appclass:""},
         {appid:"wj",appname:"问卷",href:"xsb_demo/dcwj/index_myqlist.html",appicon:"wj.png",appclass:""},
-        {appid:"jc",appname:"订餐",href:"xsb_demo/jcgl/index.html",appicon:"jc.png",appclass:""}
+        {appid:"jc",appname:"订餐",href:"xsb_demo/jcgl/index.html",appicon:"jc.png",appclass:""},
+        {appid:"zx",appname:"资讯",href:"xsb_demo/jyzx/index_zx.html",appicon:"zx.png",appclass:""}
     ],
     other:[
         {appid:"jysd",appname:"教育商店",href:"EDstore/",appicon:"app.png",appclass:""},

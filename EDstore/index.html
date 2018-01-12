@@ -14,41 +14,73 @@
    <div class="loadprogress" id="loadprogress">
         <div class="progress">
            <div class="progressyuan">
-                        <div class="proleft pro"><b id="lb"></b></div>
-                        <div class="proright pro"><b id="rb"></b></div>
-                        <div class="protxt"><span class="bf" id="bf">0%</span></div>
-                    </div>
+                <div class="proleft pro"><b id="lb"></b></div>
+                <div class="proright pro"><b id="rb"></b></div>
+                <div class="protxt"><span class="bf" id="bf">0%</span></div>
+           </div>
         </div>
     </div>
     <!--头部标准，一般固定-->
-    <div class="qkyh5_header noshadow ub ub-ac">
-        <div class="back"><a href="../index.html?st=3"><i class="qkyicon">&#xe655;</i>返回</a></div>
-        <div class="title ub-f2">最新应用</div>
-        <div class="txtother"><i class="qkyicon">&#xe639;</i></a></div> 
+    <div class="qkyh5_header noshadow ub ub-ac ub-pj">
+        <a class="back" href="../index.html?st=3"><i class="qkyicon">&#xe655;</i>返回</a>
+        <div>
+            <div class="ub ub-ac">
+                <div class="seach-box"><input type="text" placeholder="输入搜索关键词"><i class="qkyicon">&#xe639;</i></div>
+                <div class="user-tx"><img src="images/tx.png" alt=""></div>
+            </div>
+        </div>  
     </div>
+    <!-- <div class="qkyh5-mask"></div> -->
 
     <!--中部标准，一般放列表-->
-    <div class="qkyh5_main pt50">
-        <div class="allbg"></div>
-        
+    <div class="qkyh5_main edmain">
+        <div class="edstore-title ub ub-ac">
+            <div class="newtit titimg"></div><div class="title">最新应用</div>
+        </div>
+        <div class="edstore-newapp-box clear3">
+            <div class="edstore-newapp-list">
+                <div class="list-img list01"></div>
+                <div class="list-txt">
+                    <label>在线选课</label>
+                    <span>全通教育（广东）股份有限公司</span>
+                </div>
+            </div>
+            <div class="edstore-newapp-list">
+                    <div class="list-img list02"></div>
+                    <div class="list-txt">
+                        <label>在线选课</label>
+                        <span>全通教育（广东）股份有限公司</span>
+                    </div>
+            </div>
+            <div class="edstore-newapp-list">
+                    <div class="list-img list03"></div>
+                    <div class="list-txt">
+                        <label>在线选课</label>
+                        <span>全通教育（广东）股份有限公司</span>
+                    </div>
+                </div>
+        </div>
     </div>
 
     <div class="qkyh5_footbg  trn">
         <div class="footbox ub ub-ac">
-            <a class="cur trn ub-f1">
-                <i class="qkyicon">&#xe646;</i>
+            <a class="cur trn ub-f1" href="index.html">
+                <div class="ub ub-ac ub-pc">
+                <div class="footicon"><label class="new"></label><label class="new_b on"></label></div>
                 <span>最新</span>
-             
+                </div>
             </a>
-            <a class=" trn ub-f1">
-                <i class="qkyicon">&#xe604;</i>
+            <a class=" trn ub-f1" href="index_app.html">
+                <div class="ub ub-ac ub-pc">
+                <div class="footicon"><label class="apps"></label><label class="apps_b on"></label></div>
                 <span>应用</span>
-   
-            </a>
-            <a class="trn ub-f1">
-                <i class="qkyicon">&#xe666;</i>
+                </div>
+            </a> 
+            <a class="trn ub-f1" href="index_mine.html">
+                <div class="ub ub-ac ub-pc">    
+                <div class="footicon"><label class="mine"></label><label class="mine_b on"></label></div>
                 <span>我的</span>
-              
+                </div>
             </a>
         </div>
     </div>
@@ -60,7 +92,7 @@
             load.preload.on("complete",function(){
                 $(".loadprogress").fadeOut(200);
                 r.index(); 
-                //load.setImg(load.preload._loadItemsById); 
+                load.setImg(load.preload._loadItemsById); 
             });
         });
     </script>
